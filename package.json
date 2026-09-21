@@ -1,0 +1,23 @@
+{
+  "name": "pw_nonsdk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:logs": "playwright test && node scripts/extract-har-from-traces.js",
+    "extract-har": "node scripts/extract-har-from-traces.js",
+    "bundle": "node scripts/bundle-results.js",
+    "test:bundle": "playwright test && node scripts/extract-har-from-traces.js && node scripts/bundle-results.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.61.0"
+  },
+  "dependencies": {
+    "axios": "^1.18.1",
+    "form-data": "^4.0.6"
+  }
+}
