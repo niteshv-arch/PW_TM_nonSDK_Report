@@ -12,9 +12,7 @@ const CONFIG = {
 
   projectName: 'Demo_Adi',
   targetTestPlanId: 'TP-21', // Target Test Plan
-  reportFilePath: path.resolve(
-    '/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/test-results.zip'
-  ),
+  reportFilePath: path.resolve(process.cwd(), 'test-results', 'results-upload.zip'),
 
   buildName: `TRA_API_Upload_${getFormattedTimestamp()}`,
   buildIdentifier: `ID_${getFormattedTimestamp()}`,
