@@ -28,7 +28,18 @@ jobs:
       - name: Run Playwright tests
         run: npm test
 
-      - name: Upload test results
+      - name: Bundle test results
+        if: always()
+        run: node scripts/bundle-results.js
+
+      - name: Upload results to BrowserStack Test Management
+        if: always()
+        env:
+          BS_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
+          BS_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+        run: node browserstack_pipeline.js
+
+      - name: Upload artifacts to GitHub (backup)
         if: always()
         uses: actions/upload-artifact@v4
         with:

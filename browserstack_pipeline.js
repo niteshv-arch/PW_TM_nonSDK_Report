@@ -7,8 +7,8 @@ import FormData from 'form-data';
 // 1. CONFIGURATION PARAMETERS
 // ==========================================
 const CONFIG = {
-  username: process.env.BS_USERNAME || 'satyam_xpSUCh',
-  accessKey: process.env.BS_ACCESS_KEY || 'yCD2VDXRuqiGPKVSAmca',
+  username: process.env.BS_USERNAME ,
+  accessKey: process.env.BS_ACCESS_KEY ,
 
   projectName: 'Demo_Adi',
   targetTestPlanId: 'TP-21', // Target Test Plan
