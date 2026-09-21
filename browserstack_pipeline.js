@@ -1,14 +1,14 @@
-import fs from 'fs';
-import path from 'path';
-import axios from 'axios';
-import FormData from 'form-data';
+const fs = require('fs');
+const path = require('path');
+const axios = require('axios');
+const FormData = require('form-data');
 
 // ==========================================
 // 1. CONFIGURATION PARAMETERS
 // ==========================================
 const CONFIG = {
-  username: process.env.BS_USERNAME ,
-  accessKey: process.env.BS_ACCESS_KEY ,
+  username: process.env.BROWSERSTACK_USERNAME ,
+  accessKey: process.env.BROWSERSTACK_ACCESS_KEY ,
 
   projectName: 'Demo_Adi',
   targetTestPlanId: 'TP-21', // Target Test Plan
