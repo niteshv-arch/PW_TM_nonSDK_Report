@@ -20,9 +20,9 @@ const CONFIG = {
   frameworkVersion: 'Playwright, 1.61.1',
 
   // Polling Settings
-  initialDelayMs: 3000, 
-  pollIntervalMs: 3000, 
-  maxPollAttempts: 30,  
+  initialDelayMs: 5000, 
+  pollIntervalMs: 5000, 
+  maxPollAttempts: 60,  
   maxTcmRetries: 10,
 };
 
