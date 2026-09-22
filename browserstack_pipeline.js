@@ -12,6 +12,7 @@ const CONFIG = {
 
   projectName: 'Demo_Adi',
   targetTestPlanId: 'TP-21', // Target Test Plan
+  qualityGateProfile: process.env.QUALITY_GATE_PROFILE || null, // null = use overall result
   reportFilePath: path.resolve(process.cwd(), 'test-results', 'results-upload.zip'),
 
   buildName: `TRA_API_Upload_${getFormattedTimestamp()}`,
@@ -214,7 +215,49 @@ async function linkTestRunToTestPlan(tcmRunId, projectId) {
 }
 
 // ==========================================
-// STEP 4: CLOSE TEST RUN IN TEST MANAGEMENT
+// STEP 4: CHECK QUALITY GATE
+// ==========================================
+async function checkQualityGate(buildUdid) {
+  const startTime = Date.now();
+  console.log('--------------------------------------------------------------------------------');
+  console.log(`🔍 [Task 4/5] Checking Quality Gate for build ${buildUdid}...`);
+  console.log('--------------------------------------------------------------------------------');
+
+  const qgUrl = `https://api-automation.browserstack.com/ext/v1/quality-gates/${buildUdid}`;
+
+  const response = await axios.get(qgUrl, {
+    headers: { Authorization: authHeader },
+  });
+
+  const result = response.data;
+  console.log('\n📥 [API Response - Quality Gate]:');
+  console.log(JSON.stringify(result, null, 2));
+
+  let passed;
+  if (CONFIG.qualityGateProfile) {
+    // Filter by specific profile name
+    const profile = (result.quality_profiles || []).find(
+      p => p.name === CONFIG.qualityGateProfile
+    );
+    if (!profile) {
+      console.log(`\n⚠️  Quality Gate profile "${CONFIG.qualityGateProfile}" not found. Skipping close.`);
+      passed = false;
+    } else {
+      passed = profile.result === 'passed';
+      console.log(`\n${passed ? '✅' : '⚠️'} Quality Gate Profile "${profile.name}": ${profile.result}`);
+    }
+  } else {
+    // Use overall result
+    passed = result.quality_gate_result === 'passed';
+    console.log(`\n${passed ? '✅' : '⚠️'} Overall Quality Gate Result: ${result.quality_gate_result}`);
+  }
+
+  console.log(`⏱️ Task 4 Time Taken: ${formatDuration(startTime)}\n`);
+  return passed;
+}
+
+// ==========================================
+// STEP 5: CLOSE TEST RUN IN TEST MANAGEMENT
 // ==========================================
 async function closeTestRun(tcmRunId, projectId) {
   const startTime = Date.now();
@@ -252,7 +295,12 @@ async function run() {
     const buildUdid = await uploadJUnitReport();
     const { tcmRunId, projectId } = await pollBuildStatus(buildUdid);
     await linkTestRunToTestPlan(tcmRunId, projectId);
-    await closeTestRun(tcmRunId, projectId);
+    const qualityGatePassed = await checkQualityGate(buildUdid);
+    if (qualityGatePassed) {
+      await closeTestRun(tcmRunId, projectId);
+    } else {
+      console.log('⚠️  Quality Gate FAILED — Test Run will NOT be closed.');
+    }
 
     console.log('================================================================================');
     console.log(`🏆 PIPELINE EXECUTION COMPLETED SUCCESSFULLY IN ${formatDuration(overallStartTime)}`);

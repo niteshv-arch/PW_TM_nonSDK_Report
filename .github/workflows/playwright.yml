@@ -37,6 +37,7 @@ jobs:
         env:
           BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
           BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+          QUALITY_GATE_PROFILE: ${{ vars.QUALITY_GATE_PROFILE }}
         run: node browserstack_pipeline.js
 
       - name: Upload artifacts to GitHub (backup)
