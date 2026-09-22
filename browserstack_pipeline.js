@@ -183,7 +183,37 @@ async function pollForTcmIdentifier(statusUrl) {
 
 
 // ==========================================
-// STEP 3: CLOSE TEST RUN IN TEST MANAGEMENT
+// STEP 3: LINK TEST RUN TO TEST PLAN
+// ==========================================
+async function linkTestRunToTestPlan(tcmRunId, projectId) {
+  const startTime = Date.now();
+  console.log('--------------------------------------------------------------------------------');
+  console.log(`🔗 [Task 3/4] Linking Test Run ${tcmRunId} to Test Plan ${CONFIG.targetTestPlanId}...`);
+  console.log('--------------------------------------------------------------------------------');
+
+  const linkUrl = `https://test-management.browserstack.com/api/v2/projects/${projectId}/test-plans/${CONFIG.targetTestPlanId}/test-runs`;
+
+  const response = await axios.post(
+    linkUrl,
+    { test_run_ids: [tcmRunId] },
+    {
+      headers: {
+        Authorization: authHeader,
+        'Content-Type': 'application/json',
+      },
+    }
+  );
+
+  console.log('\n📥 [API Response 3 - Link to Test Plan]:');
+  console.log(JSON.stringify(response.data, null, 2));
+
+  console.log(`\n✅ Test run linked to Test Plan ${CONFIG.targetTestPlanId}!`);
+  console.log(`⏱️ Task 3 Time Taken: ${formatDuration(startTime)}\n`);
+  return response.data;
+}
+
+// ==========================================
+// STEP 4: CLOSE TEST RUN IN TEST MANAGEMENT
 // ==========================================
 async function closeTestRun(tcmRunId, projectId) {
   const startTime = Date.now();
@@ -220,6 +250,7 @@ async function run() {
   try {
     const buildUdid = await uploadJUnitReport();
     const { tcmRunId, projectId } = await pollBuildStatus(buildUdid);
+    await linkTestRunToTestPlan(tcmRunId, projectId);
     await closeTestRun(tcmRunId, projectId);
 
     console.log('================================================================================');
