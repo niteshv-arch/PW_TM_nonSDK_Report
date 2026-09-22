@@ -2,7 +2,7 @@ name: Playwright Tests
 
 on:
   push:
-    branches: [main]
+    branches: [main, feature/quality-gate-fail]
   pull_request:
     branches: [main]
   workflow_dispatch:
