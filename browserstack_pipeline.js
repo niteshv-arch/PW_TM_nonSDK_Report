@@ -225,11 +225,19 @@ async function checkQualityGate(buildUdid) {
 
   const qgUrl = `https://api-automation.browserstack.com/ext/v1/quality-gates/${buildUdid}`;
 
-  const response = await axios.get(qgUrl, {
-    headers: { Authorization: authHeader },
-  });
+  // Poll until quality gate analysis is complete
+  let result;
+  const maxQgAttempts = 20;
+  for (let attempt = 1; attempt <= maxQgAttempts; attempt++) {
+    const response = await axios.get(qgUrl, {
+      headers: { Authorization: authHeader },
+    });
+    result = response.data;
+    if (result.status !== 'running') break;
+    console.log(`   [QG Attempt ${attempt}/${maxQgAttempts}] Quality gate still processing...`);
+    await sleep(CONFIG.pollIntervalMs);
+  }
 
-  const result = response.data;
   console.log('\n📥 [API Response - Quality Gate]:');
   console.log(JSON.stringify(result, null, 2));
 
