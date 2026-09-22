@@ -191,8 +191,9 @@ async function linkTestRunToTestPlan(tcmRunId, projectId) {
   console.log(`🔗 [Task 3/4] Linking Test Run ${tcmRunId} to Test Plan ${CONFIG.targetTestPlanId}...`);
   console.log('--------------------------------------------------------------------------------');
 
-  const linkUrl = `https://api-cloud.browserstack.com/test-management/api/v2/projects/${projectId}/test-runs/${tcmRunId}/update`;
+  const linkUrl = `https://test-management.browserstack.com/api/v2/projects/${projectId}/test-runs/${tcmRunId}/update`;
 
+  console.log(`   URL: ${linkUrl}`);
   const response = await axios.patch(
     linkUrl,
     { test_run: { test_plan_id: CONFIG.targetTestPlanId } },
