@@ -1,0 +1,1954 @@
+<testsuites id="" name="" tests="44" failures="30" skipped="0" errors="0" time="77.90105899999999">
+<testsuite name="fashionstack.spec.js" timestamp="2026-09-18T11:13:16.607Z" hostname="chromium" tests="6" failures="0" skipped="0" time="8.415" errors="0">
+<testcase name="[chromium] New Navigation is visible @test TC-15442" classname="fashionstack.spec.js" time="1.112">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage for nav label: New]]
+[[PROPERTY|step[passed]=Verify page title]]
+[[PROPERTY|step[passed]=Verify hero banner heading is visible]]
+[[PROPERTY|step[passed]=Verify nav button "New" is present]]
+[[PROPERTY|step[passed]=Verify search input is present]]
+[[PROPERTY|step[passed]=Verify Login button is present]]
+[[PROPERTY|step[passed]=Verify "Featured Products" section heading is visible]]
+
+[[ATTACHMENT|fashionstack-New-Navigation-is-visible-test-TC-15442-chromium/trace.zip]]
+[[ATTACHMENT|fashionstack-New-Navigation-is-visible-test-TC-15442-chromium/network.har]]
+]]>
+</system-out>
+</testcase>
+<testcase name="[chromium] Men Navigation is visible @test TC-15442" classname="fashionstack.spec.js" time="0.525">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage for nav label: Men]]
+[[PROPERTY|step[passed]=Verify page title]]
+[[PROPERTY|step[passed]=Verify hero banner heading is visible]]
+[[PROPERTY|step[passed]=Verify nav button "Men" is present]]
+[[PROPERTY|step[passed]=Verify search input is present]]
+[[PROPERTY|step[passed]=Verify Login button is present]]
+[[PROPERTY|step[passed]=Verify "Featured Products" section heading is visible]]
+
+[[ATTACHMENT|fashionstack-Men-Navigation-is-visible-test-TC-15442-chromium/trace.zip]]
+[[ATTACHMENT|fashionstack-Men-Navigation-is-visible-test-TC-15442-chromium/network.har]]
+]]>
+</system-out>
+</testcase>
+<testcase name="[chromium] Women Navigation is visible @test TC-15442" classname="fashionstack.spec.js" time="0.575">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage for nav label: Women]]
+[[PROPERTY|step[passed]=Verify page title]]
+[[PROPERTY|step[passed]=Verify hero banner heading is visible]]
+[[PROPERTY|step[passed]=Verify nav button "Women" is present]]
+[[PROPERTY|step[passed]=Verify search input is present]]
+[[PROPERTY|step[passed]=Verify Login button is present]]
+[[PROPERTY|step[passed]=Verify "Featured Products" section heading is visible]]
+
+[[ATTACHMENT|fashionstack-Women-Navigation-is-visible-test-TC-15442-chromium/trace.zip]]
+[[ATTACHMENT|fashionstack-Women-Navigation-is-visible-test-TC-15442-chromium/network.har]]
+]]>
+</system-out>
+</testcase>
+<testcase name="[chromium] Sale Navigation is visible @test TC-15442" classname="fashionstack.spec.js" time="0.59">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage for nav label: Sale]]
+[[PROPERTY|step[passed]=Verify page title]]
+[[PROPERTY|step[passed]=Verify hero banner heading is visible]]
+[[PROPERTY|step[passed]=Verify nav button "Sale" is present]]
+[[PROPERTY|step[passed]=Verify search input is present]]
+[[PROPERTY|step[passed]=Verify Login button is present]]
+[[PROPERTY|step[passed]=Verify "Featured Products" section heading is visible]]
+
+[[ATTACHMENT|fashionstack-Sale-Navigation-is-visible-test-TC-15442-chromium/trace.zip]]
+[[ATTACHMENT|fashionstack-Sale-Navigation-is-visible-test-TC-15442-chromium/network.har]]
+]]>
+</system-out>
+</testcase>
+<testcase name="[chromium] Offers Navigation is visible @test TC-15442" classname="fashionstack.spec.js" time="0.547">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage for nav label: Offers]]
+[[PROPERTY|step[passed]=Verify page title]]
+[[PROPERTY|step[passed]=Verify hero banner heading is visible]]
+[[PROPERTY|step[passed]=Verify nav button "Offers" is present]]
+[[PROPERTY|step[passed]=Verify search input is present]]
+[[PROPERTY|step[passed]=Verify Login button is present]]
+[[PROPERTY|step[passed]=Verify "Featured Products" section heading is visible]]
+
+[[ATTACHMENT|fashionstack-Offers-Navigation-is-visible-test-TC-15442-chromium/trace.zip]]
+[[ATTACHMENT|fashionstack-Offers-Navigation-is-visible-test-TC-15442-chromium/network.har]]
+]]>
+</system-out>
+</testcase>
+<testcase name="[chromium] Add product to cart updates cart badge TC-15443" classname="fashionstack.spec.js" time="5.066">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to Men's category page]]
+[[PROPERTY|step[passed]=Verify Men's Fashion page loaded]]
+[[PROPERTY|step[passed]=Navigate to Polo Shirt product page]]
+[[PROPERTY|step[passed]=Verify product detail page loaded]]
+[[PROPERTY|step[passed]=Click "Add to Cart" button]]
+[[PROPERTY|step[passed]=Wait for cart badge to update]]
+[[PROPERTY|step[passed]=Verify cart badge shows count "1"]]
+[[PROPERTY|step[passed]=Click cart badge to open cart page]]
+[[PROPERTY|step[passed]=Verify Shopping Cart page loaded]]
+[[PROPERTY|step[passed]=Verify Polo Shirt appears in cart]]
+[[PROPERTY|step[passed]=Verify "Proceed to Checkout" button is present]]
+
+[[ATTACHMENT|fashionstack-Add-product-to-cart-updates-cart-badge-TC-15443-chromium/trace.zip]]
+[[ATTACHMENT|fashionstack-Add-product-to-cart-updates-cart-badge-TC-15443-chromium/network.har]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="footer-shop.spec.js" timestamp="2026-09-18T11:13:16.607Z" hostname="chromium" tests="5" failures="5" skipped="0" time="28.417" errors="0">
+<testcase name="[chromium] Footer Shop link &quot;New Arrivals&quot; navigates to correct page TC-15736" classname="footer-shop.spec.js" time="6.152">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage]]
+[[PROPERTY|step[passed]=Verify homepage loaded]]
+[[PROPERTY|step[passed]=Scroll to footer and click Shop link "New Arrivals"]]
+[[PROPERTY|step[failure]=Verify URL navigated to "/category/new-arrivals"]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-chromium/error-context.md]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-chromium/trace.zip]]
+[[ATTACHMENT|footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-chromium/network.har]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [chromium] › footer-shop.spec.js:40:3 › Footer Shop link "New Arrivals" navigates to correct page TC-15736 › Verify URL navigated to "/category/new-arrivals" 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/category\/new-arrivals/
+    Received string:  "https://ecommbs-prod.vercel.app/category-new-arrivals"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × unexpected value "https://ecommbs-prod.vercel.app/category-new-arrivals"
+
+
+      58 |
+      59 |     await trackedStep(`Verify URL navigated to "${expectedUrl}"`, async () => {
+    > 60 |       await expect(page).toHaveURL(new RegExp(expectedUrl));
+         |                          ^
+      61 |     });
+      62 |   });
+      63 | }
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:60:26
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[chromium] Footer Shop link &quot;Women&quot; navigates to correct page TC-15736" classname="footer-shop.spec.js" time="5.637">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage]]
+[[PROPERTY|step[passed]=Verify homepage loaded]]
+[[PROPERTY|step[passed]=Scroll to footer and click Shop link "Women"]]
+[[PROPERTY|step[failure]=Verify URL navigated to "/category/women"]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-chromium/error-context.md]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-chromium/trace.zip]]
+[[ATTACHMENT|footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-chromium/network.har]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [chromium] › footer-shop.spec.js:40:3 › Footer Shop link "Women" navigates to correct page TC-15736 › Verify URL navigated to "/category/women" 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/category\/women/
+    Received string:  "https://ecommbs-prod.vercel.app/category-women"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × unexpected value "https://ecommbs-prod.vercel.app/category-women"
+
+
+      58 |
+      59 |     await trackedStep(`Verify URL navigated to "${expectedUrl}"`, async () => {
+    > 60 |       await expect(page).toHaveURL(new RegExp(expectedUrl));
+         |                          ^
+      61 |     });
+      62 |   });
+      63 | }
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:60:26
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[chromium] Footer Shop link &quot;Men&quot; navigates to correct page TC-15736" classname="footer-shop.spec.js" time="5.528">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage]]
+[[PROPERTY|step[passed]=Verify homepage loaded]]
+[[PROPERTY|step[passed]=Scroll to footer and click Shop link "Men"]]
+[[PROPERTY|step[failure]=Verify URL navigated to "/category/men"]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-chromium/error-context.md]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-chromium/trace.zip]]
+[[ATTACHMENT|footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-chromium/network.har]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [chromium] › footer-shop.spec.js:40:3 › Footer Shop link "Men" navigates to correct page TC-15736 › Verify URL navigated to "/category/men" 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/category\/men/
+    Received string:  "https://ecommbs-prod.vercel.app/category-men"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × unexpected value "https://ecommbs-prod.vercel.app/category-men"
+
+
+      58 |
+      59 |     await trackedStep(`Verify URL navigated to "${expectedUrl}"`, async () => {
+    > 60 |       await expect(page).toHaveURL(new RegExp(expectedUrl));
+         |                          ^
+      61 |     });
+      62 |   });
+      63 | }
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:60:26
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[chromium] Footer Shop link &quot;Kids&quot; navigates to correct page TC-15736" classname="footer-shop.spec.js" time="5.522">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage]]
+[[PROPERTY|step[passed]=Verify homepage loaded]]
+[[PROPERTY|step[passed]=Scroll to footer and click Shop link "Kids"]]
+[[PROPERTY|step[failure]=Verify URL navigated to "/category/kids"]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-chromium/error-context.md]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-chromium/trace.zip]]
+[[ATTACHMENT|footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-chromium/network.har]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [chromium] › footer-shop.spec.js:40:3 › Footer Shop link "Kids" navigates to correct page TC-15736 › Verify URL navigated to "/category/kids" 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/category\/kids/
+    Received string:  "https://ecommbs-prod.vercel.app/category-kids"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × unexpected value "https://ecommbs-prod.vercel.app/category-kids"
+
+
+      58 |
+      59 |     await trackedStep(`Verify URL navigated to "${expectedUrl}"`, async () => {
+    > 60 |       await expect(page).toHaveURL(new RegExp(expectedUrl));
+         |                          ^
+      61 |     });
+      62 |   });
+      63 | }
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:60:26
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[chromium] Footer Shop link &quot;Sale&quot; navigates to correct page TC-15736" classname="footer-shop.spec.js" time="5.578">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage]]
+[[PROPERTY|step[passed]=Verify homepage loaded]]
+[[PROPERTY|step[passed]=Scroll to footer and click Shop link "Sale"]]
+[[PROPERTY|step[failure]=Verify URL navigated to "/category/sale"]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-chromium/error-context.md]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-chromium/trace.zip]]
+[[ATTACHMENT|footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-chromium/network.har]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [chromium] › footer-shop.spec.js:40:3 › Footer Shop link "Sale" navigates to correct page TC-15736 › Verify URL navigated to "/category/sale" 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/category\/sale/
+    Received string:  "https://ecommbs-prod.vercel.app/category-sale"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × unexpected value "https://ecommbs-prod.vercel.app/category-sale"
+
+
+      58 |
+      59 |     await trackedStep(`Verify URL navigated to "${expectedUrl}"`, async () => {
+    > 60 |       await expect(page).toHaveURL(new RegExp(expectedUrl));
+         |                          ^
+      61 |     });
+      62 |   });
+      63 | }
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:60:26
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="fashionstack.spec.js" timestamp="2026-09-18T11:13:16.607Z" hostname="firefox" tests="6" failures="0" skipped="0" time="11.484" errors="0">
+<testcase name="[firefox] New Navigation is visible @test TC-15442" classname="fashionstack.spec.js" time="2.228">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage for nav label: New]]
+[[PROPERTY|step[passed]=Verify page title]]
+[[PROPERTY|step[passed]=Verify hero banner heading is visible]]
+[[PROPERTY|step[passed]=Verify nav button "New" is present]]
+[[PROPERTY|step[passed]=Verify search input is present]]
+[[PROPERTY|step[passed]=Verify Login button is present]]
+[[PROPERTY|step[passed]=Verify "Featured Products" section heading is visible]]
+
+[[ATTACHMENT|fashionstack-New-Navigation-is-visible-test-TC-15442-firefox/trace.zip]]
+[[ATTACHMENT|fashionstack-New-Navigation-is-visible-test-TC-15442-firefox/network.har]]
+]]>
+</system-out>
+</testcase>
+<testcase name="[firefox] Men Navigation is visible @test TC-15442" classname="fashionstack.spec.js" time="1.785">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage for nav label: Men]]
+[[PROPERTY|step[passed]=Verify page title]]
+[[PROPERTY|step[passed]=Verify hero banner heading is visible]]
+[[PROPERTY|step[passed]=Verify nav button "Men" is present]]
+[[PROPERTY|step[passed]=Verify search input is present]]
+[[PROPERTY|step[passed]=Verify Login button is present]]
+[[PROPERTY|step[passed]=Verify "Featured Products" section heading is visible]]
+
+[[ATTACHMENT|fashionstack-Men-Navigation-is-visible-test-TC-15442-firefox/trace.zip]]
+[[ATTACHMENT|fashionstack-Men-Navigation-is-visible-test-TC-15442-firefox/network.har]]
+]]>
+</system-out>
+</testcase>
+<testcase name="[firefox] Women Navigation is visible @test TC-15442" classname="fashionstack.spec.js" time="0.886">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage for nav label: Women]]
+[[PROPERTY|step[passed]=Verify page title]]
+[[PROPERTY|step[passed]=Verify hero banner heading is visible]]
+[[PROPERTY|step[passed]=Verify nav button "Women" is present]]
+[[PROPERTY|step[passed]=Verify search input is present]]
+[[PROPERTY|step[passed]=Verify Login button is present]]
+[[PROPERTY|step[passed]=Verify "Featured Products" section heading is visible]]
+
+[[ATTACHMENT|fashionstack-Women-Navigation-is-visible-test-TC-15442-firefox/trace.zip]]
+[[ATTACHMENT|fashionstack-Women-Navigation-is-visible-test-TC-15442-firefox/network.har]]
+]]>
+</system-out>
+</testcase>
+<testcase name="[firefox] Sale Navigation is visible @test TC-15442" classname="fashionstack.spec.js" time="0.621">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage for nav label: Sale]]
+[[PROPERTY|step[passed]=Verify page title]]
+[[PROPERTY|step[passed]=Verify hero banner heading is visible]]
+[[PROPERTY|step[passed]=Verify nav button "Sale" is present]]
+[[PROPERTY|step[passed]=Verify search input is present]]
+[[PROPERTY|step[passed]=Verify Login button is present]]
+[[PROPERTY|step[passed]=Verify "Featured Products" section heading is visible]]
+
+[[ATTACHMENT|fashionstack-Sale-Navigation-is-visible-test-TC-15442-firefox/trace.zip]]
+[[ATTACHMENT|fashionstack-Sale-Navigation-is-visible-test-TC-15442-firefox/network.har]]
+]]>
+</system-out>
+</testcase>
+<testcase name="[firefox] Offers Navigation is visible @test TC-15442" classname="fashionstack.spec.js" time="0.682">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage for nav label: Offers]]
+[[PROPERTY|step[passed]=Verify page title]]
+[[PROPERTY|step[passed]=Verify hero banner heading is visible]]
+[[PROPERTY|step[passed]=Verify nav button "Offers" is present]]
+[[PROPERTY|step[passed]=Verify search input is present]]
+[[PROPERTY|step[passed]=Verify Login button is present]]
+[[PROPERTY|step[passed]=Verify "Featured Products" section heading is visible]]
+
+[[ATTACHMENT|fashionstack-Offers-Navigation-is-visible-test-TC-15442-firefox/trace.zip]]
+[[ATTACHMENT|fashionstack-Offers-Navigation-is-visible-test-TC-15442-firefox/network.har]]
+]]>
+</system-out>
+</testcase>
+<testcase name="[firefox] Add product to cart updates cart badge TC-15443" classname="fashionstack.spec.js" time="5.282">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to Men's category page]]
+[[PROPERTY|step[passed]=Verify Men's Fashion page loaded]]
+[[PROPERTY|step[passed]=Navigate to Polo Shirt product page]]
+[[PROPERTY|step[passed]=Verify product detail page loaded]]
+[[PROPERTY|step[passed]=Click "Add to Cart" button]]
+[[PROPERTY|step[passed]=Wait for cart badge to update]]
+[[PROPERTY|step[passed]=Verify cart badge shows count "1"]]
+[[PROPERTY|step[passed]=Click cart badge to open cart page]]
+[[PROPERTY|step[passed]=Verify Shopping Cart page loaded]]
+[[PROPERTY|step[passed]=Verify Polo Shirt appears in cart]]
+[[PROPERTY|step[passed]=Verify "Proceed to Checkout" button is present]]
+
+[[ATTACHMENT|fashionstack-Add-product-to-cart-updates-cart-badge-TC-15443-firefox/trace.zip]]
+[[ATTACHMENT|fashionstack-Add-product-to-cart-updates-cart-badge-TC-15443-firefox/network.har]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="footer-shop.spec.js" timestamp="2026-09-18T11:13:16.607Z" hostname="firefox" tests="5" failures="5" skipped="0" time="34.292" errors="0">
+<testcase name="[firefox] Footer Shop link &quot;New Arrivals&quot; navigates to correct page TC-15736" classname="footer-shop.spec.js" time="7.992">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage]]
+[[PROPERTY|step[passed]=Verify homepage loaded]]
+[[PROPERTY|step[passed]=Scroll to footer and click Shop link "New Arrivals"]]
+[[PROPERTY|step[failure]=Verify URL navigated to "/category/new-arrivals"]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-firefox/error-context.md]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-firefox/trace.zip]]
+[[ATTACHMENT|footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-firefox/network.har]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [firefox] › footer-shop.spec.js:40:3 › Footer Shop link "New Arrivals" navigates to correct page TC-15736 › Verify URL navigated to "/category/new-arrivals" 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/category\/new-arrivals/
+    Received string:  "https://ecommbs-prod.vercel.app/category-new-arrivals"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × unexpected value "https://ecommbs-prod.vercel.app/category-new-arrivals"
+
+
+      58 |
+      59 |     await trackedStep(`Verify URL navigated to "${expectedUrl}"`, async () => {
+    > 60 |       await expect(page).toHaveURL(new RegExp(expectedUrl));
+         |                          ^
+      61 |     });
+      62 |   });
+      63 | }
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:60:26
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-firefox/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[firefox] Footer Shop link &quot;Women&quot; navigates to correct page TC-15736" classname="footer-shop.spec.js" time="6.277">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage]]
+[[PROPERTY|step[passed]=Verify homepage loaded]]
+[[PROPERTY|step[passed]=Scroll to footer and click Shop link "Women"]]
+[[PROPERTY|step[failure]=Verify URL navigated to "/category/women"]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-firefox/error-context.md]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-firefox/trace.zip]]
+[[ATTACHMENT|footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-firefox/network.har]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [firefox] › footer-shop.spec.js:40:3 › Footer Shop link "Women" navigates to correct page TC-15736 › Verify URL navigated to "/category/women" 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/category\/women/
+    Received string:  "https://ecommbs-prod.vercel.app/category-women"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × unexpected value "https://ecommbs-prod.vercel.app/category-women"
+
+
+      58 |
+      59 |     await trackedStep(`Verify URL navigated to "${expectedUrl}"`, async () => {
+    > 60 |       await expect(page).toHaveURL(new RegExp(expectedUrl));
+         |                          ^
+      61 |     });
+      62 |   });
+      63 | }
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:60:26
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-firefox/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[firefox] Footer Shop link &quot;Men&quot; navigates to correct page TC-15736" classname="footer-shop.spec.js" time="6.455">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage]]
+[[PROPERTY|step[passed]=Verify homepage loaded]]
+[[PROPERTY|step[passed]=Scroll to footer and click Shop link "Men"]]
+[[PROPERTY|step[failure]=Verify URL navigated to "/category/men"]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-firefox/error-context.md]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-firefox/trace.zip]]
+[[ATTACHMENT|footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-firefox/network.har]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [firefox] › footer-shop.spec.js:40:3 › Footer Shop link "Men" navigates to correct page TC-15736 › Verify URL navigated to "/category/men" 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/category\/men/
+    Received string:  "https://ecommbs-prod.vercel.app/category-men"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × unexpected value "https://ecommbs-prod.vercel.app/category-men"
+
+
+      58 |
+      59 |     await trackedStep(`Verify URL navigated to "${expectedUrl}"`, async () => {
+    > 60 |       await expect(page).toHaveURL(new RegExp(expectedUrl));
+         |                          ^
+      61 |     });
+      62 |   });
+      63 | }
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:60:26
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-firefox/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[firefox] Footer Shop link &quot;Kids&quot; navigates to correct page TC-15736" classname="footer-shop.spec.js" time="6.903">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage]]
+[[PROPERTY|step[passed]=Verify homepage loaded]]
+[[PROPERTY|step[passed]=Scroll to footer and click Shop link "Kids"]]
+[[PROPERTY|step[failure]=Verify URL navigated to "/category/kids"]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-firefox/error-context.md]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-firefox/trace.zip]]
+[[ATTACHMENT|footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-firefox/network.har]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [firefox] › footer-shop.spec.js:40:3 › Footer Shop link "Kids" navigates to correct page TC-15736 › Verify URL navigated to "/category/kids" 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/category\/kids/
+    Received string:  "https://ecommbs-prod.vercel.app/category-kids"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × unexpected value "https://ecommbs-prod.vercel.app/category-kids"
+
+
+      58 |
+      59 |     await trackedStep(`Verify URL navigated to "${expectedUrl}"`, async () => {
+    > 60 |       await expect(page).toHaveURL(new RegExp(expectedUrl));
+         |                          ^
+      61 |     });
+      62 |   });
+      63 | }
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:60:26
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-firefox/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[firefox] Footer Shop link &quot;Sale&quot; navigates to correct page TC-15736" classname="footer-shop.spec.js" time="6.665">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage]]
+[[PROPERTY|step[passed]=Verify homepage loaded]]
+[[PROPERTY|step[passed]=Scroll to footer and click Shop link "Sale"]]
+[[PROPERTY|step[failure]=Verify URL navigated to "/category/sale"]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-firefox/error-context.md]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-firefox/trace.zip]]
+[[ATTACHMENT|footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-firefox/network.har]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [firefox] › footer-shop.spec.js:40:3 › Footer Shop link "Sale" navigates to correct page TC-15736 › Verify URL navigated to "/category/sale" 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/category\/sale/
+    Received string:  "https://ecommbs-prod.vercel.app/category-sale"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × unexpected value "https://ecommbs-prod.vercel.app/category-sale"
+
+
+      58 |
+      59 |     await trackedStep(`Verify URL navigated to "${expectedUrl}"`, async () => {
+    > 60 |       await expect(page).toHaveURL(new RegExp(expectedUrl));
+         |                          ^
+      61 |     });
+      62 |   });
+      63 | }
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:60:26
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-firefox/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="fashionstack.spec.js" timestamp="2026-09-18T11:13:16.607Z" hostname="pixel5" tests="6" failures="5" skipped="0" time="32.719" errors="0">
+<testcase name="[pixel5] New Navigation is visible @test TC-15442" classname="fashionstack.spec.js" time="5.715">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage for nav label: New]]
+[[PROPERTY|step[passed]=Verify page title]]
+[[PROPERTY|step[passed]=Verify hero banner heading is visible]]
+[[PROPERTY|step[failure]=Verify nav button "New" is present]]
+
+[[ATTACHMENT|fashionstack-New-Navigation-is-visible-test-TC-15442-pixel5/test-failed-1.png]]
+
+[[ATTACHMENT|fashionstack-New-Navigation-is-visible-test-TC-15442-pixel5/error-context.md]]
+
+[[ATTACHMENT|fashionstack-New-Navigation-is-visible-test-TC-15442-pixel5/trace.zip]]
+[[ATTACHMENT|fashionstack-New-Navigation-is-visible-test-TC-15442-pixel5/network.har]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [pixel5] › fashionstack.spec.js:48:3 › New Navigation is visible @test TC-15442 › Verify nav button "New" is present 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('button').filter({ hasText: 'New' }).first()
+    Expected: visible
+    Received: hidden
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('button').filter({ hasText: 'New' }).first()
+        14 × locator resolved to <button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:hover:bg-accent/50 h-9 has-[>svg]:px-3 text-[#2228…>New</button>
+           - unexpected value "hidden"
+
+
+      68 |
+      69 |     await trackedStep(`Verify nav button "${each}" is present`, async () => {
+    > 70 |       await expect(page.locator('button').filter({ hasText: each }).first()).toBeVisible();
+         |                                                                              ^
+      71 |     });
+      72 |
+      73 |     await trackedStep('Verify search input is present', async () => {
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:70:78
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:69:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/fashionstack-New-Navigation-is-visible-test-TC-15442-pixel5/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/fashionstack-New-Navigation-is-visible-test-TC-15442-pixel5/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/fashionstack-New-Navigation-is-visible-test-TC-15442-pixel5/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/fashionstack-New-Navigation-is-visible-test-TC-15442-pixel5/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[pixel5] Men Navigation is visible @test TC-15442" classname="fashionstack.spec.js" time="5.629">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage for nav label: Men]]
+[[PROPERTY|step[passed]=Verify page title]]
+[[PROPERTY|step[passed]=Verify hero banner heading is visible]]
+[[PROPERTY|step[failure]=Verify nav button "Men" is present]]
+
+[[ATTACHMENT|fashionstack-Men-Navigation-is-visible-test-TC-15442-pixel5/test-failed-1.png]]
+
+[[ATTACHMENT|fashionstack-Men-Navigation-is-visible-test-TC-15442-pixel5/error-context.md]]
+
+[[ATTACHMENT|fashionstack-Men-Navigation-is-visible-test-TC-15442-pixel5/trace.zip]]
+[[ATTACHMENT|fashionstack-Men-Navigation-is-visible-test-TC-15442-pixel5/network.har]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [pixel5] › fashionstack.spec.js:48:3 › Men Navigation is visible @test TC-15442 › Verify nav button "Men" is present 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('button').filter({ hasText: 'Men' }).first()
+    Expected: visible
+    Received: hidden
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('button').filter({ hasText: 'Men' }).first()
+        14 × locator resolved to <button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:hover:bg-accent/50 h-9 has-[>svg]:px-3 text-[#2228…>Men</button>
+           - unexpected value "hidden"
+
+
+      68 |
+      69 |     await trackedStep(`Verify nav button "${each}" is present`, async () => {
+    > 70 |       await expect(page.locator('button').filter({ hasText: each }).first()).toBeVisible();
+         |                                                                              ^
+      71 |     });
+      72 |
+      73 |     await trackedStep('Verify search input is present', async () => {
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:70:78
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:69:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/fashionstack-Men-Navigation-is-visible-test-TC-15442-pixel5/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/fashionstack-Men-Navigation-is-visible-test-TC-15442-pixel5/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/fashionstack-Men-Navigation-is-visible-test-TC-15442-pixel5/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/fashionstack-Men-Navigation-is-visible-test-TC-15442-pixel5/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[pixel5] Women Navigation is visible @test TC-15442" classname="fashionstack.spec.js" time="5.555">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage for nav label: Women]]
+[[PROPERTY|step[passed]=Verify page title]]
+[[PROPERTY|step[passed]=Verify hero banner heading is visible]]
+[[PROPERTY|step[failure]=Verify nav button "Women" is present]]
+
+[[ATTACHMENT|fashionstack-Women-Navigation-is-visible-test-TC-15442-pixel5/test-failed-1.png]]
+
+[[ATTACHMENT|fashionstack-Women-Navigation-is-visible-test-TC-15442-pixel5/error-context.md]]
+
+[[ATTACHMENT|fashionstack-Women-Navigation-is-visible-test-TC-15442-pixel5/trace.zip]]
+[[ATTACHMENT|fashionstack-Women-Navigation-is-visible-test-TC-15442-pixel5/network.har]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [pixel5] › fashionstack.spec.js:48:3 › Women Navigation is visible @test TC-15442 › Verify nav button "Women" is present 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('button').filter({ hasText: 'Women' }).first()
+    Expected: visible
+    Received: hidden
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('button').filter({ hasText: 'Women' }).first()
+        14 × locator resolved to <button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:hover:bg-accent/50 h-9 has-[>svg]:px-3 text-[#2228…>Women</button>
+           - unexpected value "hidden"
+
+
+      68 |
+      69 |     await trackedStep(`Verify nav button "${each}" is present`, async () => {
+    > 70 |       await expect(page.locator('button').filter({ hasText: each }).first()).toBeVisible();
+         |                                                                              ^
+      71 |     });
+      72 |
+      73 |     await trackedStep('Verify search input is present', async () => {
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:70:78
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:69:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/fashionstack-Women-Navigation-is-visible-test-TC-15442-pixel5/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/fashionstack-Women-Navigation-is-visible-test-TC-15442-pixel5/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/fashionstack-Women-Navigation-is-visible-test-TC-15442-pixel5/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/fashionstack-Women-Navigation-is-visible-test-TC-15442-pixel5/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[pixel5] Sale Navigation is visible @test TC-15442" classname="fashionstack.spec.js" time="5.566">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage for nav label: Sale]]
+[[PROPERTY|step[passed]=Verify page title]]
+[[PROPERTY|step[passed]=Verify hero banner heading is visible]]
+[[PROPERTY|step[failure]=Verify nav button "Sale" is present]]
+
+[[ATTACHMENT|fashionstack-Sale-Navigation-is-visible-test-TC-15442-pixel5/test-failed-1.png]]
+
+[[ATTACHMENT|fashionstack-Sale-Navigation-is-visible-test-TC-15442-pixel5/error-context.md]]
+
+[[ATTACHMENT|fashionstack-Sale-Navigation-is-visible-test-TC-15442-pixel5/trace.zip]]
+[[ATTACHMENT|fashionstack-Sale-Navigation-is-visible-test-TC-15442-pixel5/network.har]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [pixel5] › fashionstack.spec.js:48:3 › Sale Navigation is visible @test TC-15442 › Verify nav button "Sale" is present 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('button').filter({ hasText: 'Sale' }).first()
+    Expected: visible
+    Received: hidden
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('button').filter({ hasText: 'Sale' }).first()
+        14 × locator resolved to <button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:hover:bg-accent/50 h-9 has-[>svg]:px-3 text-[#2228…>Sale</button>
+           - unexpected value "hidden"
+
+
+      68 |
+      69 |     await trackedStep(`Verify nav button "${each}" is present`, async () => {
+    > 70 |       await expect(page.locator('button').filter({ hasText: each }).first()).toBeVisible();
+         |                                                                              ^
+      71 |     });
+      72 |
+      73 |     await trackedStep('Verify search input is present', async () => {
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:70:78
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:69:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/fashionstack-Sale-Navigation-is-visible-test-TC-15442-pixel5/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/fashionstack-Sale-Navigation-is-visible-test-TC-15442-pixel5/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/fashionstack-Sale-Navigation-is-visible-test-TC-15442-pixel5/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/fashionstack-Sale-Navigation-is-visible-test-TC-15442-pixel5/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[pixel5] Offers Navigation is visible @test TC-15442" classname="fashionstack.spec.js" time="5.726">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage for nav label: Offers]]
+[[PROPERTY|step[passed]=Verify page title]]
+[[PROPERTY|step[passed]=Verify hero banner heading is visible]]
+[[PROPERTY|step[failure]=Verify nav button "Offers" is present]]
+
+[[ATTACHMENT|fashionstack-Offers-Navigation-is-visible-test-TC-15442-pixel5/test-failed-1.png]]
+
+[[ATTACHMENT|fashionstack-Offers-Navigation-is-visible-test-TC-15442-pixel5/error-context.md]]
+
+[[ATTACHMENT|fashionstack-Offers-Navigation-is-visible-test-TC-15442-pixel5/trace.zip]]
+[[ATTACHMENT|fashionstack-Offers-Navigation-is-visible-test-TC-15442-pixel5/network.har]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [pixel5] › fashionstack.spec.js:48:3 › Offers Navigation is visible @test TC-15442 › Verify nav button "Offers" is present 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('button').filter({ hasText: 'Offers' }).first()
+    Expected: visible
+    Received: hidden
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('button').filter({ hasText: 'Offers' }).first()
+        14 × locator resolved to <button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:hover:bg-accent/50 h-9 has-[>svg]:px-3 text-[#2228…>Offers</button>
+           - unexpected value "hidden"
+
+
+      68 |
+      69 |     await trackedStep(`Verify nav button "${each}" is present`, async () => {
+    > 70 |       await expect(page.locator('button').filter({ hasText: each }).first()).toBeVisible();
+         |                                                                              ^
+      71 |     });
+      72 |
+      73 |     await trackedStep('Verify search input is present', async () => {
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:70:78
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:69:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/fashionstack-Offers-Navigation-is-visible-test-TC-15442-pixel5/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/fashionstack-Offers-Navigation-is-visible-test-TC-15442-pixel5/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/fashionstack-Offers-Navigation-is-visible-test-TC-15442-pixel5/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/fashionstack-Offers-Navigation-is-visible-test-TC-15442-pixel5/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[pixel5] Add product to cart updates cart badge TC-15443" classname="fashionstack.spec.js" time="4.528">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to Men's category page]]
+[[PROPERTY|step[passed]=Verify Men's Fashion page loaded]]
+[[PROPERTY|step[passed]=Navigate to Polo Shirt product page]]
+[[PROPERTY|step[passed]=Verify product detail page loaded]]
+[[PROPERTY|step[passed]=Click "Add to Cart" button]]
+[[PROPERTY|step[passed]=Wait for cart badge to update]]
+[[PROPERTY|step[passed]=Verify cart badge shows count "1"]]
+[[PROPERTY|step[passed]=Click cart badge to open cart page]]
+[[PROPERTY|step[passed]=Verify Shopping Cart page loaded]]
+[[PROPERTY|step[passed]=Verify Polo Shirt appears in cart]]
+[[PROPERTY|step[passed]=Verify "Proceed to Checkout" button is present]]
+
+[[ATTACHMENT|fashionstack-Add-product-to-cart-updates-cart-badge-TC-15443-pixel5/trace.zip]]
+[[ATTACHMENT|fashionstack-Add-product-to-cart-updates-cart-badge-TC-15443-pixel5/network.har]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="footer-shop.spec.js" timestamp="2026-09-18T11:13:16.607Z" hostname="pixel5" tests="5" failures="5" skipped="0" time="28.479" errors="0">
+<testcase name="[pixel5] Footer Shop link &quot;New Arrivals&quot; navigates to correct page TC-15736" classname="footer-shop.spec.js" time="5.512">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage]]
+[[PROPERTY|step[passed]=Verify homepage loaded]]
+[[PROPERTY|step[passed]=Scroll to footer and click Shop link "New Arrivals"]]
+[[PROPERTY|step[failure]=Verify URL navigated to "/category/new-arrivals"]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-pixel5/test-failed-1.png]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-pixel5/error-context.md]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-pixel5/trace.zip]]
+[[ATTACHMENT|footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-pixel5/network.har]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [pixel5] › footer-shop.spec.js:40:3 › Footer Shop link "New Arrivals" navigates to correct page TC-15736 › Verify URL navigated to "/category/new-arrivals" 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/category\/new-arrivals/
+    Received string:  "https://ecommbs-prod.vercel.app/category-new-arrivals"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × unexpected value "https://ecommbs-prod.vercel.app/category-new-arrivals"
+
+
+      58 |
+      59 |     await trackedStep(`Verify URL navigated to "${expectedUrl}"`, async () => {
+    > 60 |       await expect(page).toHaveURL(new RegExp(expectedUrl));
+         |                          ^
+      61 |     });
+      62 |   });
+      63 | }
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:60:26
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-pixel5/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-pixel5/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-pixel5/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-pixel5/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[pixel5] Footer Shop link &quot;Women&quot; navigates to correct page TC-15736" classname="footer-shop.spec.js" time="5.83">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage]]
+[[PROPERTY|step[passed]=Verify homepage loaded]]
+[[PROPERTY|step[passed]=Scroll to footer and click Shop link "Women"]]
+[[PROPERTY|step[failure]=Verify URL navigated to "/category/women"]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-pixel5/test-failed-1.png]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-pixel5/error-context.md]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-pixel5/trace.zip]]
+[[ATTACHMENT|footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-pixel5/network.har]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [pixel5] › footer-shop.spec.js:40:3 › Footer Shop link "Women" navigates to correct page TC-15736 › Verify URL navigated to "/category/women" 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/category\/women/
+    Received string:  "https://ecommbs-prod.vercel.app/category-women"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × unexpected value "https://ecommbs-prod.vercel.app/category-women"
+
+
+      58 |
+      59 |     await trackedStep(`Verify URL navigated to "${expectedUrl}"`, async () => {
+    > 60 |       await expect(page).toHaveURL(new RegExp(expectedUrl));
+         |                          ^
+      61 |     });
+      62 |   });
+      63 | }
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:60:26
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-pixel5/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-pixel5/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-pixel5/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-pixel5/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[pixel5] Footer Shop link &quot;Men&quot; navigates to correct page TC-15736" classname="footer-shop.spec.js" time="5.811">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage]]
+[[PROPERTY|step[passed]=Verify homepage loaded]]
+[[PROPERTY|step[passed]=Scroll to footer and click Shop link "Men"]]
+[[PROPERTY|step[failure]=Verify URL navigated to "/category/men"]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-pixel5/test-failed-1.png]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-pixel5/error-context.md]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-pixel5/trace.zip]]
+[[ATTACHMENT|footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-pixel5/network.har]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [pixel5] › footer-shop.spec.js:40:3 › Footer Shop link "Men" navigates to correct page TC-15736 › Verify URL navigated to "/category/men" 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/category\/men/
+    Received string:  "https://ecommbs-prod.vercel.app/category-men"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × unexpected value "https://ecommbs-prod.vercel.app/category-men"
+
+
+      58 |
+      59 |     await trackedStep(`Verify URL navigated to "${expectedUrl}"`, async () => {
+    > 60 |       await expect(page).toHaveURL(new RegExp(expectedUrl));
+         |                          ^
+      61 |     });
+      62 |   });
+      63 | }
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:60:26
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-pixel5/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-pixel5/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-pixel5/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-pixel5/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[pixel5] Footer Shop link &quot;Kids&quot; navigates to correct page TC-15736" classname="footer-shop.spec.js" time="5.632">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage]]
+[[PROPERTY|step[passed]=Verify homepage loaded]]
+[[PROPERTY|step[passed]=Scroll to footer and click Shop link "Kids"]]
+[[PROPERTY|step[failure]=Verify URL navigated to "/category/kids"]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-pixel5/test-failed-1.png]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-pixel5/error-context.md]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-pixel5/trace.zip]]
+[[ATTACHMENT|footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-pixel5/network.har]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [pixel5] › footer-shop.spec.js:40:3 › Footer Shop link "Kids" navigates to correct page TC-15736 › Verify URL navigated to "/category/kids" 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/category\/kids/
+    Received string:  "https://ecommbs-prod.vercel.app/category-kids"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × unexpected value "https://ecommbs-prod.vercel.app/category-kids"
+
+
+      58 |
+      59 |     await trackedStep(`Verify URL navigated to "${expectedUrl}"`, async () => {
+    > 60 |       await expect(page).toHaveURL(new RegExp(expectedUrl));
+         |                          ^
+      61 |     });
+      62 |   });
+      63 | }
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:60:26
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-pixel5/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-pixel5/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-pixel5/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-pixel5/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[pixel5] Footer Shop link &quot;Sale&quot; navigates to correct page TC-15736" classname="footer-shop.spec.js" time="5.694">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage]]
+[[PROPERTY|step[passed]=Verify homepage loaded]]
+[[PROPERTY|step[passed]=Scroll to footer and click Shop link "Sale"]]
+[[PROPERTY|step[failure]=Verify URL navigated to "/category/sale"]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-pixel5/test-failed-1.png]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-pixel5/error-context.md]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-pixel5/trace.zip]]
+[[ATTACHMENT|footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-pixel5/network.har]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [pixel5] › footer-shop.spec.js:40:3 › Footer Shop link "Sale" navigates to correct page TC-15736 › Verify URL navigated to "/category/sale" 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/category\/sale/
+    Received string:  "https://ecommbs-prod.vercel.app/category-sale"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × unexpected value "https://ecommbs-prod.vercel.app/category-sale"
+
+
+      58 |
+      59 |     await trackedStep(`Verify URL navigated to "${expectedUrl}"`, async () => {
+    > 60 |       await expect(page).toHaveURL(new RegExp(expectedUrl));
+         |                          ^
+      61 |     });
+      62 |   });
+      63 | }
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:60:26
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-pixel5/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-pixel5/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-pixel5/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-pixel5/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="fashionstack.spec.js" timestamp="2026-09-18T11:13:16.607Z" hostname="iphone13" tests="6" failures="5" skipped="0" time="36.305" errors="0">
+<testcase name="[iphone13] New Navigation is visible @test TC-15442" classname="fashionstack.spec.js" time="8.115">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage for nav label: New]]
+[[PROPERTY|step[passed]=Verify page title]]
+[[PROPERTY|step[passed]=Verify hero banner heading is visible]]
+[[PROPERTY|step[failure]=Verify nav button "New" is present]]
+
+[[ATTACHMENT|fashionstack-New-Navigation-is-visible-test-TC-15442-iphone13/test-failed-1.png]]
+
+[[ATTACHMENT|fashionstack-New-Navigation-is-visible-test-TC-15442-iphone13/error-context.md]]
+
+[[ATTACHMENT|fashionstack-New-Navigation-is-visible-test-TC-15442-iphone13/trace.zip]]
+[[ATTACHMENT|fashionstack-New-Navigation-is-visible-test-TC-15442-iphone13/network.har]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [iphone13] › fashionstack.spec.js:48:3 › New Navigation is visible @test TC-15442 › Verify nav button "New" is present 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('button').filter({ hasText: 'New' }).first()
+    Expected: visible
+    Received: hidden
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('button').filter({ hasText: 'New' }).first()
+        14 × locator resolved to <button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:hover:bg-accent/50 h-9 has-[>svg]:px-3 text-[#2228…>New</button>
+           - unexpected value "hidden"
+
+
+      68 |
+      69 |     await trackedStep(`Verify nav button "${each}" is present`, async () => {
+    > 70 |       await expect(page.locator('button').filter({ hasText: each }).first()).toBeVisible();
+         |                                                                              ^
+      71 |     });
+      72 |
+      73 |     await trackedStep('Verify search input is present', async () => {
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:70:78
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:69:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/fashionstack-New-Navigation-is-visible-test-TC-15442-iphone13/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/fashionstack-New-Navigation-is-visible-test-TC-15442-iphone13/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/fashionstack-New-Navigation-is-visible-test-TC-15442-iphone13/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/fashionstack-New-Navigation-is-visible-test-TC-15442-iphone13/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[iphone13] Men Navigation is visible @test TC-15442" classname="fashionstack.spec.js" time="6.032">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage for nav label: Men]]
+[[PROPERTY|step[passed]=Verify page title]]
+[[PROPERTY|step[passed]=Verify hero banner heading is visible]]
+[[PROPERTY|step[failure]=Verify nav button "Men" is present]]
+
+[[ATTACHMENT|fashionstack-Men-Navigation-is-visible-test-TC-15442-iphone13/test-failed-1.png]]
+
+[[ATTACHMENT|fashionstack-Men-Navigation-is-visible-test-TC-15442-iphone13/error-context.md]]
+
+[[ATTACHMENT|fashionstack-Men-Navigation-is-visible-test-TC-15442-iphone13/trace.zip]]
+[[ATTACHMENT|fashionstack-Men-Navigation-is-visible-test-TC-15442-iphone13/network.har]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [iphone13] › fashionstack.spec.js:48:3 › Men Navigation is visible @test TC-15442 › Verify nav button "Men" is present 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('button').filter({ hasText: 'Men' }).first()
+    Expected: visible
+    Received: hidden
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('button').filter({ hasText: 'Men' }).first()
+        14 × locator resolved to <button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:hover:bg-accent/50 h-9 has-[>svg]:px-3 text-[#2228…>Men</button>
+           - unexpected value "hidden"
+
+
+      68 |
+      69 |     await trackedStep(`Verify nav button "${each}" is present`, async () => {
+    > 70 |       await expect(page.locator('button').filter({ hasText: each }).first()).toBeVisible();
+         |                                                                              ^
+      71 |     });
+      72 |
+      73 |     await trackedStep('Verify search input is present', async () => {
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:70:78
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:69:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/fashionstack-Men-Navigation-is-visible-test-TC-15442-iphone13/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/fashionstack-Men-Navigation-is-visible-test-TC-15442-iphone13/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/fashionstack-Men-Navigation-is-visible-test-TC-15442-iphone13/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/fashionstack-Men-Navigation-is-visible-test-TC-15442-iphone13/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[iphone13] Women Navigation is visible @test TC-15442" classname="fashionstack.spec.js" time="5.792">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage for nav label: Women]]
+[[PROPERTY|step[passed]=Verify page title]]
+[[PROPERTY|step[passed]=Verify hero banner heading is visible]]
+[[PROPERTY|step[failure]=Verify nav button "Women" is present]]
+
+[[ATTACHMENT|fashionstack-Women-Navigation-is-visible-test-TC-15442-iphone13/test-failed-1.png]]
+
+[[ATTACHMENT|fashionstack-Women-Navigation-is-visible-test-TC-15442-iphone13/error-context.md]]
+
+[[ATTACHMENT|fashionstack-Women-Navigation-is-visible-test-TC-15442-iphone13/trace.zip]]
+[[ATTACHMENT|fashionstack-Women-Navigation-is-visible-test-TC-15442-iphone13/network.har]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [iphone13] › fashionstack.spec.js:48:3 › Women Navigation is visible @test TC-15442 › Verify nav button "Women" is present 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('button').filter({ hasText: 'Women' }).first()
+    Expected: visible
+    Received: hidden
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('button').filter({ hasText: 'Women' }).first()
+        14 × locator resolved to <button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:hover:bg-accent/50 h-9 has-[>svg]:px-3 text-[#2228…>Women</button>
+           - unexpected value "hidden"
+
+
+      68 |
+      69 |     await trackedStep(`Verify nav button "${each}" is present`, async () => {
+    > 70 |       await expect(page.locator('button').filter({ hasText: each }).first()).toBeVisible();
+         |                                                                              ^
+      71 |     });
+      72 |
+      73 |     await trackedStep('Verify search input is present', async () => {
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:70:78
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:69:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/fashionstack-Women-Navigation-is-visible-test-TC-15442-iphone13/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/fashionstack-Women-Navigation-is-visible-test-TC-15442-iphone13/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/fashionstack-Women-Navigation-is-visible-test-TC-15442-iphone13/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/fashionstack-Women-Navigation-is-visible-test-TC-15442-iphone13/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[iphone13] Sale Navigation is visible @test TC-15442" classname="fashionstack.spec.js" time="5.753">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage for nav label: Sale]]
+[[PROPERTY|step[passed]=Verify page title]]
+[[PROPERTY|step[passed]=Verify hero banner heading is visible]]
+[[PROPERTY|step[failure]=Verify nav button "Sale" is present]]
+
+[[ATTACHMENT|fashionstack-Sale-Navigation-is-visible-test-TC-15442-iphone13/test-failed-1.png]]
+
+[[ATTACHMENT|fashionstack-Sale-Navigation-is-visible-test-TC-15442-iphone13/error-context.md]]
+
+[[ATTACHMENT|fashionstack-Sale-Navigation-is-visible-test-TC-15442-iphone13/trace.zip]]
+[[ATTACHMENT|fashionstack-Sale-Navigation-is-visible-test-TC-15442-iphone13/network.har]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [iphone13] › fashionstack.spec.js:48:3 › Sale Navigation is visible @test TC-15442 › Verify nav button "Sale" is present 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('button').filter({ hasText: 'Sale' }).first()
+    Expected: visible
+    Received: hidden
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('button').filter({ hasText: 'Sale' }).first()
+        14 × locator resolved to <button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:hover:bg-accent/50 h-9 has-[>svg]:px-3 text-[#2228…>Sale</button>
+           - unexpected value "hidden"
+
+
+      68 |
+      69 |     await trackedStep(`Verify nav button "${each}" is present`, async () => {
+    > 70 |       await expect(page.locator('button').filter({ hasText: each }).first()).toBeVisible();
+         |                                                                              ^
+      71 |     });
+      72 |
+      73 |     await trackedStep('Verify search input is present', async () => {
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:70:78
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:69:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/fashionstack-Sale-Navigation-is-visible-test-TC-15442-iphone13/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/fashionstack-Sale-Navigation-is-visible-test-TC-15442-iphone13/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/fashionstack-Sale-Navigation-is-visible-test-TC-15442-iphone13/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/fashionstack-Sale-Navigation-is-visible-test-TC-15442-iphone13/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[iphone13] Offers Navigation is visible @test TC-15442" classname="fashionstack.spec.js" time="5.805">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage for nav label: Offers]]
+[[PROPERTY|step[passed]=Verify page title]]
+[[PROPERTY|step[passed]=Verify hero banner heading is visible]]
+[[PROPERTY|step[failure]=Verify nav button "Offers" is present]]
+
+[[ATTACHMENT|fashionstack-Offers-Navigation-is-visible-test-TC-15442-iphone13/test-failed-1.png]]
+
+[[ATTACHMENT|fashionstack-Offers-Navigation-is-visible-test-TC-15442-iphone13/error-context.md]]
+
+[[ATTACHMENT|fashionstack-Offers-Navigation-is-visible-test-TC-15442-iphone13/trace.zip]]
+[[ATTACHMENT|fashionstack-Offers-Navigation-is-visible-test-TC-15442-iphone13/network.har]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [iphone13] › fashionstack.spec.js:48:3 › Offers Navigation is visible @test TC-15442 › Verify nav button "Offers" is present 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('button').filter({ hasText: 'Offers' }).first()
+    Expected: visible
+    Received: hidden
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('button').filter({ hasText: 'Offers' }).first()
+        14 × locator resolved to <button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:hover:bg-accent/50 h-9 has-[>svg]:px-3 text-[#2228…>Offers</button>
+           - unexpected value "hidden"
+
+
+      68 |
+      69 |     await trackedStep(`Verify nav button "${each}" is present`, async () => {
+    > 70 |       await expect(page.locator('button').filter({ hasText: each }).first()).toBeVisible();
+         |                                                                              ^
+      71 |     });
+      72 |
+      73 |     await trackedStep('Verify search input is present', async () => {
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:70:78
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js:69:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/fashionstack-Offers-Navigation-is-visible-test-TC-15442-iphone13/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/fashionstack-Offers-Navigation-is-visible-test-TC-15442-iphone13/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/fashionstack-Offers-Navigation-is-visible-test-TC-15442-iphone13/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/fashionstack-Offers-Navigation-is-visible-test-TC-15442-iphone13/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[iphone13] Add product to cart updates cart badge TC-15443" classname="fashionstack.spec.js" time="4.808">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to Men's category page]]
+[[PROPERTY|step[passed]=Verify Men's Fashion page loaded]]
+[[PROPERTY|step[passed]=Navigate to Polo Shirt product page]]
+[[PROPERTY|step[passed]=Verify product detail page loaded]]
+[[PROPERTY|step[passed]=Click "Add to Cart" button]]
+[[PROPERTY|step[passed]=Wait for cart badge to update]]
+[[PROPERTY|step[passed]=Verify cart badge shows count "1"]]
+[[PROPERTY|step[passed]=Click cart badge to open cart page]]
+[[PROPERTY|step[passed]=Verify Shopping Cart page loaded]]
+[[PROPERTY|step[passed]=Verify Polo Shirt appears in cart]]
+[[PROPERTY|step[passed]=Verify "Proceed to Checkout" button is present]]
+
+[[ATTACHMENT|fashionstack-Add-product-to-cart-updates-cart-badge-TC-15443-iphone13/trace.zip]]
+[[ATTACHMENT|fashionstack-Add-product-to-cart-updates-cart-badge-TC-15443-iphone13/network.har]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="footer-shop.spec.js" timestamp="2026-09-18T11:13:16.607Z" hostname="iphone13" tests="5" failures="5" skipped="0" time="29.188" errors="0">
+<testcase name="[iphone13] Footer Shop link &quot;New Arrivals&quot; navigates to correct page TC-15736" classname="footer-shop.spec.js" time="6.056">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage]]
+[[PROPERTY|step[passed]=Verify homepage loaded]]
+[[PROPERTY|step[passed]=Scroll to footer and click Shop link "New Arrivals"]]
+[[PROPERTY|step[failure]=Verify URL navigated to "/category/new-arrivals"]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-iphone13/test-failed-1.png]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-iphone13/error-context.md]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-iphone13/trace.zip]]
+[[ATTACHMENT|footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-iphone13/network.har]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [iphone13] › footer-shop.spec.js:40:3 › Footer Shop link "New Arrivals" navigates to correct page TC-15736 › Verify URL navigated to "/category/new-arrivals" 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/category\/new-arrivals/
+    Received string:  "https://ecommbs-prod.vercel.app/category-new-arrivals"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × unexpected value "https://ecommbs-prod.vercel.app/category-new-arrivals"
+
+
+      58 |
+      59 |     await trackedStep(`Verify URL navigated to "${expectedUrl}"`, async () => {
+    > 60 |       await expect(page).toHaveURL(new RegExp(expectedUrl));
+         |                          ^
+      61 |     });
+      62 |   });
+      63 | }
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:60:26
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-iphone13/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-iphone13/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-iphone13/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/footer-shop-Footer-Shop-li-2b0f2-es-to-correct-page-TC-15736-iphone13/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[iphone13] Footer Shop link &quot;Women&quot; navigates to correct page TC-15736" classname="footer-shop.spec.js" time="5.74">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage]]
+[[PROPERTY|step[passed]=Verify homepage loaded]]
+[[PROPERTY|step[passed]=Scroll to footer and click Shop link "Women"]]
+[[PROPERTY|step[failure]=Verify URL navigated to "/category/women"]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-iphone13/test-failed-1.png]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-iphone13/error-context.md]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-iphone13/trace.zip]]
+[[ATTACHMENT|footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-iphone13/network.har]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [iphone13] › footer-shop.spec.js:40:3 › Footer Shop link "Women" navigates to correct page TC-15736 › Verify URL navigated to "/category/women" 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/category\/women/
+    Received string:  "https://ecommbs-prod.vercel.app/category-women"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × unexpected value "https://ecommbs-prod.vercel.app/category-women"
+
+
+      58 |
+      59 |     await trackedStep(`Verify URL navigated to "${expectedUrl}"`, async () => {
+    > 60 |       await expect(page).toHaveURL(new RegExp(expectedUrl));
+         |                          ^
+      61 |     });
+      62 |   });
+      63 | }
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:60:26
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-iphone13/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-iphone13/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-iphone13/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/footer-shop-Footer-Shop-li-09932-es-to-correct-page-TC-15736-iphone13/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[iphone13] Footer Shop link &quot;Men&quot; navigates to correct page TC-15736" classname="footer-shop.spec.js" time="5.842">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage]]
+[[PROPERTY|step[passed]=Verify homepage loaded]]
+[[PROPERTY|step[passed]=Scroll to footer and click Shop link "Men"]]
+[[PROPERTY|step[failure]=Verify URL navigated to "/category/men"]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-iphone13/test-failed-1.png]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-iphone13/error-context.md]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-iphone13/trace.zip]]
+[[ATTACHMENT|footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-iphone13/network.har]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [iphone13] › footer-shop.spec.js:40:3 › Footer Shop link "Men" navigates to correct page TC-15736 › Verify URL navigated to "/category/men" 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/category\/men/
+    Received string:  "https://ecommbs-prod.vercel.app/category-men"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × unexpected value "https://ecommbs-prod.vercel.app/category-men"
+
+
+      58 |
+      59 |     await trackedStep(`Verify URL navigated to "${expectedUrl}"`, async () => {
+    > 60 |       await expect(page).toHaveURL(new RegExp(expectedUrl));
+         |                          ^
+      61 |     });
+      62 |   });
+      63 | }
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:60:26
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-iphone13/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-iphone13/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-iphone13/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/footer-shop-Footer-Shop-li-b973d-es-to-correct-page-TC-15736-iphone13/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[iphone13] Footer Shop link &quot;Kids&quot; navigates to correct page TC-15736" classname="footer-shop.spec.js" time="5.778">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage]]
+[[PROPERTY|step[passed]=Verify homepage loaded]]
+[[PROPERTY|step[passed]=Scroll to footer and click Shop link "Kids"]]
+[[PROPERTY|step[failure]=Verify URL navigated to "/category/kids"]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-iphone13/test-failed-1.png]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-iphone13/error-context.md]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-iphone13/trace.zip]]
+[[ATTACHMENT|footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-iphone13/network.har]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [iphone13] › footer-shop.spec.js:40:3 › Footer Shop link "Kids" navigates to correct page TC-15736 › Verify URL navigated to "/category/kids" 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/category\/kids/
+    Received string:  "https://ecommbs-prod.vercel.app/category-kids"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × unexpected value "https://ecommbs-prod.vercel.app/category-kids"
+
+
+      58 |
+      59 |     await trackedStep(`Verify URL navigated to "${expectedUrl}"`, async () => {
+    > 60 |       await expect(page).toHaveURL(new RegExp(expectedUrl));
+         |                          ^
+      61 |     });
+      62 |   });
+      63 | }
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:60:26
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-iphone13/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-iphone13/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-iphone13/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/footer-shop-Footer-Shop-li-bd991-es-to-correct-page-TC-15736-iphone13/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="[iphone13] Footer Shop link &quot;Sale&quot; navigates to correct page TC-15736" classname="footer-shop.spec.js" time="5.772">
+<system-out>
+<![CDATA[[[PROPERTY|step[passed]=Navigate to FashionStack homepage]]
+[[PROPERTY|step[passed]=Verify homepage loaded]]
+[[PROPERTY|step[passed]=Scroll to footer and click Shop link "Sale"]]
+[[PROPERTY|step[failure]=Verify URL navigated to "/category/sale"]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-iphone13/test-failed-1.png]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-iphone13/error-context.md]]
+
+[[ATTACHMENT|footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-iphone13/trace.zip]]
+[[ATTACHMENT|footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-iphone13/network.har]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [iphone13] › footer-shop.spec.js:40:3 › Footer Shop link "Sale" navigates to correct page TC-15736 › Verify URL navigated to "/category/sale" 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/category\/sale/
+    Received string:  "https://ecommbs-prod.vercel.app/category-sale"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × unexpected value "https://ecommbs-prod.vercel.app/category-sale"
+
+
+      58 |
+      59 |     await trackedStep(`Verify URL navigated to "${expectedUrl}"`, async () => {
+    > 60 |       await expect(page).toHaveURL(new RegExp(expectedUrl));
+         |                          ^
+      61 |     });
+      62 |   });
+      63 | }
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:60:26
+        at trackedStep (/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:12:5)
+        at /Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/footer-shop.spec.js:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-iphone13/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-iphone13/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-iphone13/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/footer-shop-Footer-Shop-li-8f908-es-to-correct-page-TC-15736-iphone13/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>

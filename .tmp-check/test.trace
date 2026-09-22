@@ -1,0 +1,92 @@
+{"version":8,"type":"context-options","origin":"testRunner","browserName":"","playwrightVersion":"1.61.0","options":{},"platform":"darwin","wallTime":1784584316377,"monotonicTime":669.121,"sdkLanguage":"javascript","testTimeout":30000}
+{"type":"before","callId":"hook@1","stepId":"hook@1","startTime":680.555,"class":"Test","method":"hook","title":"Before Hooks","params":{},"stack":[]}
+{"type":"before","callId":"fixture@26","stepId":"fixture@26","parentId":"hook@1","startTime":685.137,"class":"Test","method":"fixture","title":"Fixture \"browser\"","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@27","stepId":"pw:api@27","parentId":"fixture@26","startTime":686.391,"class":"Test","method":"pw:api","title":"Launch browser","params":{"handleSIGINT":"false","tracesDir":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/test-results/.playwright-artifacts-0/traces","artifactsDir":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/test-results/.playwright-artifacts-0","headless":"true","ignoreDefaultArgs":"undefined","ignoreAllDefaultArgs":"false","env":"undefined","timeout":"180000"},"stack":[]}
+{"type":"after","callId":"pw:api@27","endTime":1076.593,"annotations":[]}
+{"type":"after","callId":"fixture@26","endTime":1076.681,"annotations":[]}
+{"type":"before","callId":"fixture@30","stepId":"fixture@30","parentId":"hook@1","startTime":1077.963,"class":"Test","method":"fixture","title":"Fixture \"context\"","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@31","stepId":"pw:api@31","parentId":"fixture@30","startTime":1078.921,"class":"Test","method":"pw:api","title":"Create context","params":{"selectorEngines":"[]","testIdAttributeName":"data-testid","acceptDownloads":"accept","bypassCSP":"false","colorScheme":"light","deviceScaleFactor":"1","hasTouch":"false","ignoreHTTPSErrors":"false","isMobile":"false","javaScriptEnabled":"true","locale":"en-US","offline":"false","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.55 Safari/537.36","viewport":"Object","baseURL":"https://ecommbs-prod.vercel.app","serviceWorkers":"allow","noDefaultViewport":"false","extraHTTPHeaders":"undefined","storageState":"undefined","reducedMotion":"undefined","forcedColors":"undefined","contrast":"undefined","clientCertificates":"undefined"},"stack":[]}
+{"type":"after","callId":"pw:api@31","endTime":1082.325,"annotations":[]}
+{"type":"after","callId":"fixture@30","endTime":1084.179,"annotations":[]}
+{"type":"before","callId":"fixture@32","stepId":"fixture@32","parentId":"hook@1","startTime":1084.324,"class":"Test","method":"fixture","title":"Fixture \"page\"","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@33","stepId":"pw:api@33","parentId":"fixture@32","startTime":1084.917,"class":"Test","method":"pw:api","title":"Create page","params":{},"stack":[]}
+{"type":"after","callId":"pw:api@33","endTime":1143.919,"annotations":[]}
+{"type":"after","callId":"fixture@32","endTime":1143.947,"annotations":[]}
+{"type":"after","callId":"hook@1","endTime":1143.98,"annotations":[]}
+{"type":"before","callId":"test.step@34","stepId":"test.step@34","startTime":1144.542,"class":"Test","method":"test.step","title":"Navigate to Men's category page","params":{},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":12,"column":5,"function":"trackedStep"}]}
+{"type":"before","callId":"pw:api@35","stepId":"pw:api@35","parentId":"test.step@34","startTime":1145.299,"class":"Test","method":"pw:api","title":"Navigate to \"/category/men\"","params":{"url":"https://ecommbs-prod.vercel.app/category/men","waitUntil":"load","timeout":"0"},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":100,"column":16}]}
+{"type":"after","callId":"pw:api@35","endTime":1348.609,"annotations":[]}
+{"type":"after","callId":"test.step@34","endTime":1348.673,"annotations":[]}
+{"type":"stdout","timestamp":1348.775,"text":"[[PROPERTY|step[passed]=Navigate to Men's category page]]\n"}
+{"type":"before","callId":"test.step@36","stepId":"test.step@36","startTime":1349.032,"class":"Test","method":"test.step","title":"Verify Men's Fashion page loaded","params":{},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":12,"column":5,"function":"trackedStep"}]}
+{"type":"before","callId":"expect@37","stepId":"expect@37","parentId":"test.step@36","startTime":1353.805,"class":"Test","method":"expect","title":"Expect \"toBeVisible\"","params":{},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":105,"column":31}]}
+{"type":"after","callId":"expect@37","endTime":1370.536,"annotations":[]}
+{"type":"after","callId":"test.step@36","endTime":1370.552,"annotations":[]}
+{"type":"stdout","timestamp":1370.585,"text":"[[PROPERTY|step[passed]=Verify Men's Fashion page loaded]]\n"}
+{"type":"before","callId":"test.step@38","stepId":"test.step@38","startTime":1370.755,"class":"Test","method":"test.step","title":"Navigate to Polo Shirt product page","params":{},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":12,"column":5,"function":"trackedStep"}]}
+{"type":"before","callId":"pw:api@39","stepId":"pw:api@39","parentId":"test.step@38","startTime":1371.208,"class":"Test","method":"pw:api","title":"Navigate to \"/product/21\"","params":{"url":"https://ecommbs-prod.vercel.app/product/21","waitUntil":"load","timeout":"0"},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":109,"column":16}]}
+{"type":"after","callId":"pw:api@39","endTime":1435.9,"annotations":[]}
+{"type":"after","callId":"test.step@38","endTime":1435.924,"annotations":[]}
+{"type":"stdout","timestamp":1436.051,"text":"[[PROPERTY|step[passed]=Navigate to Polo Shirt product page]]\n"}
+{"type":"before","callId":"test.step@40","stepId":"test.step@40","startTime":1436.455,"class":"Test","method":"test.step","title":"Verify product detail page loaded","params":{},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":12,"column":5,"function":"trackedStep"}]}
+{"type":"before","callId":"expect@41","stepId":"expect@41","parentId":"test.step@40","startTime":1438.962,"class":"Test","method":"expect","title":"Expect \"toBeVisible\"","params":{},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":114,"column":34}]}
+{"type":"after","callId":"expect@41","endTime":3792.917,"annotations":[]}
+{"type":"after","callId":"test.step@40","endTime":3792.933,"annotations":[]}
+{"type":"stdout","timestamp":3792.973,"text":"[[PROPERTY|step[passed]=Verify product detail page loaded]]\n"}
+{"type":"before","callId":"test.step@42","stepId":"test.step@42","startTime":3793.183,"class":"Test","method":"test.step","title":"Click \"Add to Cart\" button","params":{},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":12,"column":5,"function":"trackedStep"}]}
+{"type":"before","callId":"pw:api@43","stepId":"pw:api@43","parentId":"test.step@42","startTime":3793.896,"class":"Test","method":"pw:api","title":"Click locator('button.cyan-glow').filter({ hasText: 'Add to Cart' })","params":{"selector":"button.cyan-glow >> internal:has-text=\"Add to Cart\"i","strict":"true","timeout":"0"},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":118,"column":79}]}
+{"type":"after","callId":"pw:api@43","endTime":3865.522,"annotations":[]}
+{"type":"after","callId":"test.step@42","endTime":3865.538,"annotations":[]}
+{"type":"stdout","timestamp":3865.577,"text":"[[PROPERTY|step[passed]=Click \"Add to Cart\" button]]\n"}
+{"type":"before","callId":"test.step@44","stepId":"test.step@44","startTime":3865.781,"class":"Test","method":"test.step","title":"Wait for cart badge to update","params":{},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":12,"column":5,"function":"trackedStep"}]}
+{"type":"before","callId":"pw:api@45","stepId":"pw:api@45","parentId":"test.step@44","startTime":3866.249,"class":"Test","method":"pw:api","title":"Wait for timeout","params":{"waitTimeout":"1500"},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":122,"column":16}]}
+{"type":"after","callId":"pw:api@45","endTime":5371.865,"annotations":[]}
+{"type":"after","callId":"test.step@44","endTime":5371.904,"annotations":[]}
+{"type":"stdout","timestamp":5371.996,"text":"[[PROPERTY|step[passed]=Wait for cart badge to update]]\n"}
+{"type":"before","callId":"test.step@46","stepId":"test.step@46","startTime":5372.545,"class":"Test","method":"test.step","title":"Verify cart badge shows count \"1\"","params":{},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":12,"column":5,"function":"trackedStep"}]}
+{"type":"before","callId":"expect@47","stepId":"expect@47","parentId":"test.step@46","startTime":5375.254,"class":"Test","method":"expect","title":"Expect \"toBeVisible\"","params":{},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":126,"column":59}]}
+{"type":"after","callId":"expect@47","endTime":5384.298,"annotations":[]}
+{"type":"after","callId":"test.step@46","endTime":5384.318,"annotations":[]}
+{"type":"stdout","timestamp":5384.376,"text":"[[PROPERTY|step[passed]=Verify cart badge shows count \"1\"]]\n"}
+{"type":"before","callId":"test.step@48","stepId":"test.step@48","startTime":5384.673,"class":"Test","method":"test.step","title":"Click cart badge to open cart page","params":{},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":12,"column":5,"function":"trackedStep"}]}
+{"type":"before","callId":"pw:api@49","stepId":"pw:api@49","parentId":"test.step@48","startTime":5385.604,"class":"Test","method":"pw:api","title":"Click getByRole('button', { name: '1' })","params":{"selector":"internal:role=button[name=\"1\"i]","strict":"true","timeout":"0"},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":130,"column":51}]}
+{"type":"after","callId":"pw:api@49","endTime":5413.859,"annotations":[]}
+{"type":"after","callId":"test.step@48","endTime":5413.877,"annotations":[]}
+{"type":"stdout","timestamp":5414.033,"text":"[[PROPERTY|step[passed]=Click cart badge to open cart page]]\n"}
+{"type":"before","callId":"test.step@50","stepId":"test.step@50","startTime":5414.29,"class":"Test","method":"test.step","title":"Verify Shopping Cart page loaded","params":{},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":12,"column":5,"function":"trackedStep"}]}
+{"type":"before","callId":"expect@51","stepId":"expect@51","parentId":"test.step@50","startTime":5414.873,"class":"Test","method":"expect","title":"Expect \"toHaveURL\"","params":{"expected":"Object"},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":134,"column":24}]}
+{"type":"after","callId":"expect@51","endTime":5418.078,"annotations":[]}
+{"type":"before","callId":"expect@52","stepId":"expect@52","parentId":"test.step@50","startTime":5418.663,"class":"Test","method":"expect","title":"Expect \"toBeVisible\"","params":{},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":136,"column":31}]}
+{"type":"after","callId":"expect@52","endTime":5437.64,"annotations":[]}
+{"type":"after","callId":"test.step@50","endTime":5437.664,"annotations":[]}
+{"type":"stdout","timestamp":5437.809,"text":"[[PROPERTY|step[passed]=Verify Shopping Cart page loaded]]\n"}
+{"type":"before","callId":"test.step@53","stepId":"test.step@53","startTime":5438.146,"class":"Test","method":"test.step","title":"Verify Polo Shirt appears in cart","params":{},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":12,"column":5,"function":"trackedStep"}]}
+{"type":"before","callId":"expect@54","stepId":"expect@54","parentId":"test.step@53","startTime":5438.739,"class":"Test","method":"expect","title":"Expect \"toBeVisible\"","params":{},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":141,"column":28}]}
+{"type":"after","callId":"expect@54","endTime":5441.86,"annotations":[]}
+{"type":"after","callId":"test.step@53","endTime":5441.916,"annotations":[]}
+{"type":"stdout","timestamp":5442.182,"text":"[[PROPERTY|step[passed]=Verify Polo Shirt appears in cart]]\n"}
+{"type":"before","callId":"test.step@55","stepId":"test.step@55","startTime":5442.372,"class":"Test","method":"test.step","title":"Verify \"Proceed to Checkout\" button is present","params":{},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":12,"column":5,"function":"trackedStep"}]}
+{"type":"before","callId":"expect@56","stepId":"expect@56","parentId":"test.step@55","startTime":5442.88,"class":"Test","method":"expect","title":"Expect \"toBeVisible\"","params":{},"stack":[{"file":"/Users/satyamsharma/Documents/Test Companion/PW_nonSDK/tests/fashionstack.spec.js","line":146,"column":31}]}
+{"type":"after","callId":"expect@56","endTime":5445.567,"annotations":[]}
+{"type":"after","callId":"test.step@55","endTime":5445.579,"annotations":[]}
+{"type":"stdout","timestamp":5445.601,"text":"[[PROPERTY|step[passed]=Verify \"Proceed to Checkout\" button is present]]\n"}
+{"type":"before","callId":"hook@57","stepId":"hook@57","startTime":5445.791,"class":"Test","method":"hook","title":"After Hooks","params":{},"stack":[]}
+{"type":"before","callId":"fixture@58","stepId":"fixture@58","parentId":"hook@57","startTime":5446.272,"class":"Test","method":"fixture","title":"Fixture \"page\"","params":{},"stack":[]}
+{"type":"after","callId":"fixture@58","endTime":5446.331,"annotations":[]}
+{"type":"before","callId":"fixture@59","stepId":"fixture@59","parentId":"hook@57","startTime":5446.412,"class":"Test","method":"fixture","title":"Fixture \"context\"","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@60","stepId":"pw:api@60","parentId":"fixture@59","startTime":5538.355,"class":"Test","method":"pw:api","title":"Close context","params":{"reason":"Test ended."},"stack":[]}
+{"type":"after","callId":"pw:api@60","endTime":5540.714,"annotations":[]}
+{"type":"after","callId":"fixture@59","endTime":5540.786,"annotations":[]}
+{"type":"before","callId":"fixture@69","stepId":"fixture@69","parentId":"hook@57","startTime":5541.708,"class":"Test","method":"fixture","title":"Fixture \"baseURL\"","params":{},"stack":[{"file":"project#chromium","line":1,"column":1}],"group":"configuration"}
+{"type":"after","callId":"fixture@69","endTime":5541.718,"annotations":[]}
+{"type":"before","callId":"fixture@70","stepId":"fixture@70","parentId":"hook@57","startTime":5541.883,"class":"Test","method":"fixture","title":"Fixture \"userAgent\"","params":{},"stack":[{"file":"project#chromium","line":1,"column":1}],"group":"configuration"}
+{"type":"after","callId":"fixture@70","endTime":5541.89,"annotations":[]}
+{"type":"before","callId":"fixture@72","stepId":"fixture@72","parentId":"hook@57","startTime":5542.022,"class":"Test","method":"fixture","title":"Fixture \"viewport\"","params":{},"stack":[{"file":"project#chromium","line":1,"column":1}],"group":"configuration"}
+{"type":"after","callId":"fixture@72","endTime":5542.029,"annotations":[]}
+{"type":"before","callId":"fixture@79","stepId":"fixture@79","parentId":"hook@57","startTime":5542.5,"class":"Test","method":"fixture","title":"Fixture \"isMobile\"","params":{},"stack":[{"file":"project#chromium","line":1,"column":1}],"group":"configuration"}
+{"type":"after","callId":"fixture@79","endTime":5542.514,"annotations":[]}
+{"type":"before","callId":"fixture@83","stepId":"fixture@83","parentId":"hook@57","startTime":5542.768,"class":"Test","method":"fixture","title":"Fixture \"hasTouch\"","params":{},"stack":[{"file":"project#chromium","line":1,"column":1}],"group":"configuration"}
+{"type":"after","callId":"fixture@83","endTime":5542.773,"annotations":[]}
+{"type":"before","callId":"fixture@85","stepId":"fixture@85","parentId":"hook@57","startTime":5542.892,"class":"Test","method":"fixture","title":"Fixture \"deviceScaleFactor\"","params":{},"stack":[{"file":"project#chromium","line":1,"column":1}],"group":"configuration"}
+{"type":"after","callId":"fixture@85","endTime":5542.897,"annotations":[]}
+{"type":"after","callId":"hook@57","endTime":5543.237,"annotations":[]}
