@@ -191,11 +191,11 @@ async function linkTestRunToTestPlan(tcmRunId, projectId) {
   console.log(`🔗 [Task 3/4] Linking Test Run ${tcmRunId} to Test Plan ${CONFIG.targetTestPlanId}...`);
   console.log('--------------------------------------------------------------------------------');
 
-  const linkUrl = `https://test-management.browserstack.com/api/v2/projects/${projectId}/test-plans/${CONFIG.targetTestPlanId}/test-runs`;
+  const linkUrl = `https://test-management.browserstack.com/api/v2/projects/${projectId}/test-runs/${tcmRunId}`;
 
-  const response = await axios.post(
+  const response = await axios.patch(
     linkUrl,
-    { test_run_ids: [tcmRunId] },
+    { test_plan_id: CONFIG.targetTestPlanId },
     {
       headers: {
         Authorization: authHeader,
