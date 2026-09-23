@@ -303,18 +303,21 @@ async function fetchLatestBuildUuid() {
   console.log(`🔎 [SDK Mode] Fetching latest build for project "${CONFIG.projectName}"...`);
   console.log('--------------------------------------------------------------------------------');
 
-  const url = `https://api-automation.browserstack.com/ext/v1/builds?project_name=${encodeURIComponent(CONFIG.projectName)}&limit=1`;
+  const url = `https://api-automation.browserstack.com/ext/v1/projects/${encodeURIComponent(CONFIG.projectName)}/builds?limit=1`;
 
   const response = await axios.get(url, {
     headers: { Authorization: authHeader },
   });
+
+  console.log('\n📥 [API Response - Latest Build]:');
+  console.log(JSON.stringify(response.data, null, 2));
 
   const builds = response.data?.builds || response.data;
   const latest = Array.isArray(builds) ? builds[0] : null;
 
   if (!latest) throw new Error('No builds found for project: ' + CONFIG.projectName);
 
-  const buildUdid = latest.build_uuid || latest.id;
+  const buildUdid = latest.build_uuid || latest.hashed_id || latest.id;
   console.log(`\n✅ Latest build UUID: ${buildUdid}`);
   console.log(`⏱️ Fetch Time: ${formatDuration(startTime)}\n`);
   return buildUdid;
