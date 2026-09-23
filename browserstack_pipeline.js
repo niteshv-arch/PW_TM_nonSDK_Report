@@ -303,21 +303,41 @@ async function fetchLatestBuildUuid() {
   console.log(`🔎 [SDK Mode] Fetching latest build for project "${CONFIG.projectName}"...`);
   console.log('--------------------------------------------------------------------------------');
 
-  const url = `https://api-automation.browserstack.com/ext/v1/projects/${encodeURIComponent(CONFIG.projectName)}/builds?limit=1`;
+  // Read the SDK log file to extract the build UUID from the observability URL
+  const logDir = path.join(process.cwd(), 'log');
+  let buildUdid = null;
 
-  const response = await axios.get(url, {
-    headers: { Authorization: authHeader },
-  });
+  if (fs.existsSync(logDir)) {
+    const allFiles = fs.readdirSync(logDir);
+    console.log(`   Log directory contents: ${JSON.stringify(allFiles)}`);
+    const logFiles = allFiles.filter(f => f.endsWith('.log') || f.endsWith('.txt'));
+    for (const logFile of logFiles) {
+      const content = fs.readFileSync(path.join(logDir, logFile), 'utf8');
+      // Match observability URL: automation.browserstack.com/builds/<uuid>
+      const match = content.match(/automation\.browserstack\.com\/builds\/([a-z0-9]+)/);
+      if (match) {
+        buildUdid = match[1];
+        break;
+      }
+    }
+  }
 
-  console.log('\n📥 [API Response - Latest Build]:');
-  console.log(JSON.stringify(response.data, null, 2));
+  // Fallback: check SDK stdout log
+  if (!buildUdid) {
+    const sdkLogPath = path.join(process.cwd(), 'log', 'sdk.log');
+    if (fs.existsSync(sdkLogPath)) {
+      const content = fs.readFileSync(sdkLogPath, 'utf8');
+      const match = content.match(/automation\.browserstack\.com\/builds\/([a-z0-9]+)/);
+      if (match) buildUdid = match[1];
+    }
+  }
 
-  const builds = response.data?.builds || response.data;
-  const latest = Array.isArray(builds) ? builds[0] : null;
-
-  if (!latest) throw new Error('No builds found for project: ' + CONFIG.projectName);
-
-  const buildUdid = latest.build_uuid || latest.hashed_id || latest.id;
+  if (!buildUdid) {
+    throw new Error(
+      'Could not find build UUID from SDK logs. ' +
+      'Ensure the SDK run completed and logs are in the log/ directory.'
+    );
+  }
   console.log(`\n✅ Latest build UUID: ${buildUdid}`);
   console.log(`⏱️ Fetch Time: ${formatDuration(startTime)}\n`);
   return buildUdid;
