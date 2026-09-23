@@ -7,14 +7,21 @@
     "test:logs": "playwright test && node scripts/extract-har-from-traces.js",
     "extract-har": "node scripts/extract-har-from-traces.js",
     "bundle": "node scripts/bundle-results.js",
-    "test:bundle": "playwright test && node scripts/extract-har-from-traces.js && node scripts/bundle-results.js"
+    "test:bundle": "playwright test && node scripts/extract-har-from-traces.js && node scripts/bundle-results.js",
+    "postinstall": "npm update browserstack-node-sdk",
+    "test:logs-browserstack": "playwright test && browserstack-node-sdk node scripts/extract-har-from-traces.js",
+    "extract-har-browserstack": "browserstack-node-sdk node scripts/extract-har-from-traces.js",
+    "bundle-browserstack": "browserstack-node-sdk node scripts/bundle-results.js",
+    "test:bundle-browserstack": "playwright test && browserstack-node-sdk node scripts/extract-har-from-traces.js && node scripts/bundle-results.js",
+    "test-browserstack": "browserstack-node-sdk playwright test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.61.0"
+    "@playwright/test": "^1.61.0",
+    "browserstack-node-sdk": "^1.70.3"
   },
   "dependencies": {
     "axios": "^1.18.1",

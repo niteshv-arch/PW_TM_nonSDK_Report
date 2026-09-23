@@ -1,0 +1,33 @@
+# =============================
+# Set BrowserStack Credentials
+# =============================
+userName: ${BROWSERSTACK_USERNAME}
+accessKey: ${BROWSERSTACK_ACCESS_KEY}
+
+# ======================
+# Project & Build Info
+# ======================
+projectName: Demo_Adi
+buildName: SDK_Integration_Build
+buildIdentifier: '#${BUILD_NUMBER}'
+
+# ==========================================
+# Execution Routing (External Grid Execution)
+# ==========================================
+# Disables routing to BrowserStack cloud; runs tests on your external/local grid
+browserstackAutomate: false
+appAutomate: false
+
+# =======================
+# Test Observability & Reporting
+# =======================
+# Enables SDK listeners to capture test results, logs, and artifacts
+testObservability: true
+testReporting: true
+
+# =======================
+# Test Management
+# =======================
+# Auto-link this build to Test Plan TP-21 in the Demo_Adi project
+testManagementOptions:
+  testPlanId: "TP-21"
