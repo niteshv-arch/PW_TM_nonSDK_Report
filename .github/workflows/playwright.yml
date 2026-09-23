@@ -6,6 +6,16 @@ on:
   pull_request:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      quality_gate_profile:
+        description: 'Quality Gate Profile to evaluate'
+        required: false
+        type: choice
+        default: ''
+        options:
+          - ''
+          - Quality_Gate_Pass
+          - Quality_Gate_Fail
 
 jobs:
   test:
@@ -30,6 +40,15 @@ jobs:
           BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
           BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
         run: npx browserstack-node-sdk playwright test
+
+      - name: Quality Gate check and close Test Run
+        if: always()
+        env:
+          BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
+          BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+          QUALITY_GATE_PROFILE: ${{ inputs.quality_gate_profile }}
+          SDK_MODE: 'true'
+        run: node browserstack_pipeline.js
 
       - name: Upload artifacts to GitHub (backup)
         if: always()

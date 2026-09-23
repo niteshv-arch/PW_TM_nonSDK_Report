@@ -295,12 +295,48 @@ async function closeTestRun(tcmRunId, projectId) {
 }
 
 // ==========================================
+// SDK MODE: FETCH LATEST BUILD UUID
+// ==========================================
+async function fetchLatestBuildUuid() {
+  const startTime = Date.now();
+  console.log('--------------------------------------------------------------------------------');
+  console.log(`🔎 [SDK Mode] Fetching latest build for project "${CONFIG.projectName}"...`);
+  console.log('--------------------------------------------------------------------------------');
+
+  const url = `https://api-automation.browserstack.com/ext/v1/builds?project_name=${encodeURIComponent(CONFIG.projectName)}&limit=1`;
+
+  const response = await axios.get(url, {
+    headers: { Authorization: authHeader },
+  });
+
+  const builds = response.data?.builds || response.data;
+  const latest = Array.isArray(builds) ? builds[0] : null;
+
+  if (!latest) throw new Error('No builds found for project: ' + CONFIG.projectName);
+
+  const buildUdid = latest.build_uuid || latest.id;
+  console.log(`\n✅ Latest build UUID: ${buildUdid}`);
+  console.log(`⏱️ Fetch Time: ${formatDuration(startTime)}\n`);
+  return buildUdid;
+}
+
+// ==========================================
 // MAIN EXECUTION FLOW
 // ==========================================
 async function run() {
   const overallStartTime = Date.now();
+  const sdkMode = process.env.SDK_MODE === 'true';
+
   try {
-    const buildUdid = await uploadJUnitReport();
+    let buildUdid;
+
+    if (sdkMode) {
+      console.log('🔧 Running in SDK Mode — skipping JUnit upload, fetching latest build...');
+      buildUdid = await fetchLatestBuildUuid();
+    } else {
+      buildUdid = await uploadJUnitReport();
+    }
+
     const { tcmRunId, projectId } = await pollBuildStatus(buildUdid);
     await linkTestRunToTestPlan(tcmRunId, projectId);
     const qualityGatePassed = await checkQualityGate(buildUdid);
