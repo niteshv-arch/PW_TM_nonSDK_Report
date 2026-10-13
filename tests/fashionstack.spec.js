@@ -66,12 +66,24 @@ for (const each of NAV_LABELS) {
       await expect(heroHeading).toBeVisible();
     });
 
+    // On mobile viewports the header <nav> is display:none and the labels live in a
+    // dropdown menu opened by a lg:hidden trigger; on desktop they are header buttons.
+    const isDesktopNav = await page.locator('header nav').isVisible();
+
     await trackedStep(`Verify nav button "${each}" is present`, async () => {
-      await expect(page.locator('button').filter({ hasText: each }).first()).toBeVisible();
+      if (isDesktopNav) {
+        await expect(page.locator('button').filter({ hasText: each }).first()).toBeVisible();
+      } else {
+        await page.locator('header button[data-slot="dropdown-menu-trigger"]').click();
+        await expect(page.getByRole('menuitem', { name: each, exact: true })).toBeVisible();
+        await page.keyboard.press('Escape');
+      }
     });
 
     await trackedStep('Verify search input is present', async () => {
-      await expect(page.getByPlaceholder('Search...')).toBeVisible();
+      // Desktop shows "Search...", mobile shows a separate "Search products..." input
+      const searchPlaceholder = isDesktopNav ? 'Search...' : 'Search products...';
+      await expect(page.getByPlaceholder(searchPlaceholder)).toBeVisible();
     });
 
     await trackedStep('Verify Login button is present', async () => {
