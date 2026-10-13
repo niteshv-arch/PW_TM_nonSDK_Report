@@ -29,11 +29,11 @@ async function trackedStep(/** @type {string} */ name, /** @type {() => Promise<
 //   "Sale"         → /category-sale          (URL pattern)
 // ─────────────────────────────────────────────────────────────────────────────
 const FOOTER_SHOP_LINKS = [
-  { label: 'New Arrivals', expectedUrl: '/category/new-arrivals' },
-  { label: 'Women',        expectedUrl: '/category/women' },
-  { label: 'Men',          expectedUrl: '/category/men' },
-  { label: 'Kids',         expectedUrl: '/category/kids' },
-  { label: 'Sale',         expectedUrl: '/category/sale' },
+  { label: 'New Arrivals', expectedUrl: '/category-new-arrivals' },
+  { label: 'Women',        expectedUrl: '/category-women' },
+  { label: 'Men',          expectedUrl: '/category-men' },
+  { label: 'Kids',         expectedUrl: '/category-kids' },
+  { label: 'Sale',         expectedUrl: '/category-sale' },
 ];
 
 for (const { label, expectedUrl } of FOOTER_SHOP_LINKS) {

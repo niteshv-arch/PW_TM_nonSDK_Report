@@ -15,7 +15,10 @@ const CONFIG = {
   qualityGateProfile: process.env.QUALITY_GATE_PROFILE || null, // null = use overall result
   reportFilePath: path.resolve(process.cwd(), 'test-results', 'results-upload.zip'),
 
-  buildName: `TRA_API_Upload_${getFormattedTimestamp()}`,
+  // Rerun mode: set IS_RERUN=true and BUILD_NAME to the ORIGINAL build's name so the
+  // upload maps to the latest build run with that name (isRerun and buildIdentifier cannot be combined).
+  isRerun: String(process.env.IS_RERUN).toLowerCase() === 'true',
+  buildName: process.env.BUILD_NAME || `TRA_API_Upload_${getFormattedTimestamp()}`,
   buildIdentifier: `ID_${getFormattedTimestamp()}`,
   tags: 'junit_upload, regression',
   frameworkVersion: 'Playwright, 1.61.1',
@@ -62,7 +65,12 @@ async function uploadJUnitReport() {
   formData.append('data', fs.createReadStream(CONFIG.reportFilePath));
   formData.append('projectName', CONFIG.projectName);
   formData.append('buildName', CONFIG.buildName);
-  formData.append('buildIdentifier', CONFIG.buildIdentifier);
+  if (CONFIG.isRerun) {
+    formData.append('isRerun', 'true');
+    console.log(`🔁 Rerun upload: mapping to latest build run named "${CONFIG.buildName}"`);
+  } else {
+    formData.append('buildIdentifier', CONFIG.buildIdentifier);
+  }
   formData.append('tags', CONFIG.tags);
   formData.append('frameworkVersion', CONFIG.frameworkVersion);
 

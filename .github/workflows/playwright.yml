@@ -1,10 +1,6 @@
 name: Playwright Tests
 
 on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
   workflow_dispatch:
     inputs:
       quality_gate_profile:
@@ -16,6 +12,16 @@ on:
           - ''
           - Quality_Gate_Pass
           - Quality_Gate_Fail
+      is_rerun:
+        description: 'Upload as a rerun of an existing build (maps to latest build run with the same build name)'
+        required: false
+        type: boolean
+        default: false
+      build_name:
+        description: 'Original build name (required when is_rerun is true)'
+        required: false
+        type: string
+        default: ''
 
 jobs:
   test:
@@ -48,6 +54,8 @@ jobs:
           BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
           BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
           QUALITY_GATE_PROFILE: ${{ inputs.quality_gate_profile }}
+          IS_RERUN: ${{ inputs.is_rerun }}
+          BUILD_NAME: ${{ inputs.build_name }}
         run: node browserstack_pipeline.js
 
       - name: Upload artifacts to GitHub (backup)
