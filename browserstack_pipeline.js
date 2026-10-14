@@ -63,6 +63,7 @@ async function uploadJUnitReport() {
 
   const formData = new FormData();
   formData.append('data', fs.createReadStream(CONFIG.reportFilePath));
+  formData.append('format', 'junit');
   formData.append('projectName', CONFIG.projectName);
   formData.append('buildName', CONFIG.buildName);
   if (CONFIG.isRerun) {
@@ -308,6 +309,9 @@ async function closeTestRun(tcmRunId, projectId) {
 async function run() {
   const overallStartTime = Date.now();
   try {
+    if (CONFIG.isRerun && !(process.env.BUILD_NAME || '').trim()) {
+      throw new Error('Rerun requires BUILD_NAME to exactly match the original build name.');
+    }
     const buildUdid = await uploadJUnitReport();
     const { tcmRunId, projectId } = await pollBuildStatus(buildUdid);
     await linkTestRunToTestPlan(tcmRunId, projectId);
