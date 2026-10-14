@@ -29,11 +29,11 @@ async function trackedStep(/** @type {string} */ name, /** @type {() => Promise<
 //   "Sale"         → /category-sale          (URL pattern)
 // ─────────────────────────────────────────────────────────────────────────────
 const FOOTER_SHOP_LINKS = [
-  { label: 'New Arrivals', expectedUrl: '/category-new-arrivals' },
-  { label: 'Women',        expectedUrl: '/category-women' },
-  { label: 'Men',          expectedUrl: '/category-men' },
   // TEMP: intentionally broken (old wrong URL form) to produce failures for the rerun/aggregate-summary check.
-  // Revert to '/category-kids' and '/category-sale' to make them pass again.
+  // Revert all five to the '/category-<name>' form (e.g. '/category-kids') to make them pass again.
+  { label: 'New Arrivals', expectedUrl: '/category/new-arrivals' },
+  { label: 'Women',        expectedUrl: '/category/women' },
+  { label: 'Men',          expectedUrl: '/category/men' },
   { label: 'Kids',         expectedUrl: '/category/kids' },
   { label: 'Sale',         expectedUrl: '/category/sale' },
 ];
