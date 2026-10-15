@@ -22,6 +22,20 @@ on:
         required: false
         type: string
         default: ''
+      spec_file:
+        description: 'Which spec file to run (all runs everything)'
+        required: false
+        type: choice
+        default: 'all'
+        options:
+          - all
+          - tests/footer-shop.spec.js
+          - tests/fashionstack.spec.js
+      test_grep:
+        description: 'Optional: only run tests whose title matches this text (e.g. Footer Shop). Leave empty for all tests in the chosen spec.'
+        required: false
+        type: string
+        default: ''
 
 jobs:
   test:
@@ -42,7 +56,19 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        run: npm test
+        env:
+          SPEC_FILE: ${{ inputs.spec_file }}
+          TEST_GREP: ${{ inputs.test_grep }}
+        run: |
+          ARGS=()
+          if [ -n "$SPEC_FILE" ] && [ "$SPEC_FILE" != "all" ]; then
+            ARGS+=("$SPEC_FILE")
+          fi
+          if [ -n "$TEST_GREP" ]; then
+            ARGS+=(--grep "$TEST_GREP")
+          fi
+          echo "Running: npm test -- ${ARGS[*]:-<all tests>}"
+          npm test -- ${ARGS[@]+"${ARGS[@]}"}
 
       - name: Bundle test results
         if: always()
